@@ -88,7 +88,7 @@ class CryptoUtils:
     @staticmethod
     def aes_decrypt(encrypted_base64: str) -> str:
         """
-        AES-CBC解密 (PKCS7填充)
+        AES-CBC解密 
         
         :param encrypted_base64: Base64编码的加密字符串
         :return: 解密后的明文
@@ -104,15 +104,8 @@ class CryptoUtils:
 
             cipher = AES.new(Config.AES_KEY, AES.MODE_CBC, Config.AES_IV)
             decrypted_bytes = cipher.decrypt(encrypted_bytes)
-            
-            # PKCS7去除填充
-            pad_length = decrypted_bytes[-1]
-            if not (1 <= pad_length <= Config.AES_BLOCK_SIZE):
-                raise ValueError("无效的填充长度")
-            if decrypted_bytes[-pad_length:] != bytes([pad_length]) * pad_length:
-                raise ValueError("填充验证失败")
 
-            return decrypted_bytes[:-pad_length].decode("utf-8")
+            return decrypted_bytes.rstrip(b'\x00').decode("utf-8")
         except (ValueError, TypeError) as e:
             logger.error(f"解密参数错误: {str(e)}")
             raise DecryptionError(encrypted_base64[:50], f"参数错误: {str(e)}")
