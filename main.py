@@ -151,17 +151,21 @@ class NetworkUtils:
 
 class DataProcessor:
     @staticmethod
-    def parse_response(encrypted_data: str) -> Dict:
+    def parse_response(response_data: dict) -> Dict:
         """
         响应数据解析方法
         
         :param encrypted_data: 加密的响应数据
         :return: 解析后的数据字典
         """
+        logger.debug(f"原始响应数据: {json.dumps(response_data, ensure_ascii=False)}")
+        
+        encrypted_data = response_data.get("data")
         if not encrypted_data:
-            logger.warning("收到空响应数据")
-            return {"error": "empty data"}
-
+            logger.error("服务器返回空数据，可能原因：")
+            logger.error(f"1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制")
+            logger.error(f"原始响应码: {response_data.get('code')} 信息: {response_data.get('msg')}")
+            return {"error": "empty response data"}
         try:
             decrypted_str = CryptoUtils.aes_decrypt(encrypted_data)
             logger.debug(f"解密数据样本: {decrypted_str[:100]}...")
@@ -287,9 +291,24 @@ class CreditCrawler:
         self.session = requests.Session()
         self.current_code = ""
         self.current_ts = ""
-
+        
+    def _diagnose_connection(self):
+        """连接诊断工具"""
+        test_url = "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=test"
+        try:
+            response = self.session.get(test_url, timeout=5)
+            logger.info(f"网络连通性测试: 状态码 {response.status_code}")
+            return True
+        except Exception as e:
+            logger.error(f"服务器不可达，请检查: {str(e)}")
+            return False
+            
     def run(self):
         """主执行流程"""
+        logger.info("=== 启动系统诊断 ===")
+        if not self._diagnose_connection():
+            raise RuntimeError("服务器连接失败")
+            
         logger.info("=== 爬虫启动 ===")
         try:
             self._refresh_captcha()
@@ -331,29 +350,42 @@ class CreditCrawler:
             f"?pageSize={Config.PAGE_SIZE}&cioName=%E5%85%AC%E5%8F%B8&page={page}"
             f"&code={quote(self.current_code)}&codeValue={self.current_ts}"
         )
-        response = NetworkUtils.safe_request(self.session, url).json()
-        return DataProcessor.parse_response(response.get("data", ""))
+        # 新增参数验证
+        logger.debug(f"请求参数验证 -> code: {self.current_code[:4]}... ts: {self.current_ts}")
+        if not all([self.current_code, self.current_ts]):
+            raise ValueError("无效的验证码参数")
+        
+        response = NetworkUtils.safe_request(self.session, url)
+        return DataProcessor.parse_response(response.json())
 
     def _crawl_all_pages(self, total_pages: int) -> List[Dict]:
-        """分页爬取所有数据"""
         collected_data = []
-        for page in range(1, total_pages + 1):
+        current_page = 1
+        
+        while current_page <= total_pages:
             retry = 0
-            while retry < Config.PAGE_RETRY_MAX:
+            success = False
+            
+            while retry < Config.PAGE_RETRY_MAX and not success:
                 try:
-                    page_data = self._fetch_page(page)
+                    page_data = self._fetch_page(current_page)
                     if not page_data.get("data"):
                         raise ValueError("空数据集")
-                        
+                    
                     collected_data.extend(page_data["data"])
-                    logger.info(f"第 {page}/{total_pages} 页采集完成，累计 {len(collected_data)} 条")
-                    break
+                    logger.info(f"成功获取第 {current_page}/{total_pages} 页，累计 {len(collected_data)} 条")
+                    success = True
+                    current_page += 1
+                    
                 except Exception as e:
                     retry += 1
-                    logger.warning(f"第 {page} 页采集失败: {str(e)}")
-                    self._refresh_captcha()
-            else:
-                logger.error(f"跳过第 {page} 页，超过最大重试次数")
+                    logger.warning(f"第 {current_page} 页第 {retry} 次重试，错误: {str(e)}")
+                    self._refresh_captcha()  # 每次重试都刷新验证码
+            
+            if not success:
+                logger.error(f"跳过第 {current_page} 页，连续失败 {Config.PAGE_RETRY_MAX} 次")
+                current_page += 1
+        
         return collected_data
 
     def _export_data(self, data: List[Dict]):
