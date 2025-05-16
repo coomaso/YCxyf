@@ -74,7 +74,7 @@ class Config:
         {'id': 'csf', 'name': '初始分', 'width': 12, 'merge': True, 'align': 'center', 'format': '0'},
         {'id': 'zzmx', 'name': '资质明细', 'width': 50, 'merge': False, 'align': 'left'},
         {'id': 'cxdj', 'name': '诚信等级', 'width': 12, 'merge': False, 'align': 'center'},
-        {'id': 'score', 'name': '诚信分值', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
+        {'id': 'score', 'name': '诚信分值', 'width': 12, 'merge': False, 'align': 'center', 'format': '0.0'},
         {'id': 'jcf', 'name': '基础分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
         {'id': 'zxjf', 'name': '专项加分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
         {'id': 'kf', 'name': '扣分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
@@ -241,7 +241,7 @@ class ExcelExporter:
         main_info = {
             'cioName': item.get('cioName', ''),
             'eqtName': item.get('eqtName', ''),
-            'csf': int(float(item.get('csf', 0))),
+            'csf': float(item.get('csf', 0)),
             'orgId': item.get('orgId', ''),
             'cecId': item.get('cecId', ''),
             'zzmx': ''
@@ -255,10 +255,10 @@ class ExcelExporter:
             **main_info,
             'zzmx': detail.get('zzmx', ''),
             'cxdj': detail.get('cxdj', ''),
-            'score': int(float(detail.get('score', 0))),
-            'jcf': int(float(detail.get('jcf', 0))),
-            'zxjf': int(float(detail.get('zxjf', 0))),
-            'kf': int(float(detail.get('kf', 0))),
+            'score': float(detail.get('score', 0)),
+            'jcf': float(detail.get('jcf', 0)),
+            'zxjf': float(detail.get('zxjf', 0)),
+            'kf': float(detail.get('kf', 0)),
             'eqlId': detail.get('eqlId', '')
         } for detail in details]
 
