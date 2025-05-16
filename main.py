@@ -277,9 +277,9 @@ class ExcelExporter:
     def _get_output_filename(github_mode: bool, timestamp: str) -> str:
         """生成输出文件名"""
         if github_mode:
-            output_dir = os.path.join(os.getcwd(), "reports")
+            output_dir = os.path.join(os.getcwd(), "excel_output")
             os.makedirs(output_dir, exist_ok=True)
-            return os.path.join(output_dir, f"信用评价_{timestamp}.xlsx")
+            return os.path.join(output_dir, f"宜昌市信用评价信息_{timestamp}.xlsx")
         return f"宜昌市信用评价信息_{timestamp}.xlsx"
 
 # ==================== 主程序 ====================
