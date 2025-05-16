@@ -1,0 +1,101 @@
+name: 宜昌市信用数据自动采集
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 每天UTC时间20:00运行（北京时间次日04:00）
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  data-collect:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: 设置Python环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install pycryptodome==3.19.1 requests==2.31.0 openpyxl==3.1.2
+
+    - name: 执行数据采集
+      id: export
+      run: |
+        # 生成时间戳
+        ts=$(date +%Y%m%d%H%M)
+        echo "ts=${ts}" >> $GITHUB_OUTPUT
+
+        # 清理旧文件
+        mkdir -p excel_output
+        find excel_output/ -maxdepth 1 -type f \( -name "*.xlsx" -o -name "*.json" \) -delete
+
+        # 执行主脚本
+        python3 main.py
+
+        # 重命名Excel文件
+        original_file=$(ls excel_output/*.xlsx | head -n 1)
+        new_file="excel_output/宜昌市信用数据_${ts}.xlsx"
+        [ -f "$original_file" ] && mv "$original_file" "$new_file"
+
+        # 检查Excel文件是否成功生成
+        if [ ! -f "$new_file" ]; then
+            echo "::error:: 文件生成失败"
+            exit 1
+        fi
+
+        echo "file-path=${new_file}" >> $GITHUB_OUTPUT
+
+    - name: 上传Excel数据文件
+      uses: actions/upload-artifact@v4
+      with:
+        name: enterprise-data
+        path: ${{ steps.export.outputs.file-path }}
+        retention-days: 7
+
+    - name: 提交到仓库
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+
+        ts="${{ steps.export.outputs.ts }}"
+        filename=$(basename "${{ steps.export.outputs.file-path }}")
+        month_dir=$(date +'%Y-%m')
+
+        # 创建目标目录
+        mkdir -p "historical_X_data/$month_dir"
+        mkdir -p "historical_J_data/$month_dir"
+
+        # 复制 Excel 文件
+        cp "${{ steps.export.outputs.file-path }}" "historical_X_data/$month_dir/$filename"
+
+        # 复制 JSON 文件（如存在）
+        json_file=$(ls excel_output/*.json 2>/dev/null | head -n 1)
+        if [ -f "$json_file" ]; then
+          json_filename=$(basename "$json_file")
+          cp "$json_file" "historical_J_data/$month_dir/$json_filename"
+        else
+          echo "⚠️ 未找到 JSON 文件，跳过归档"
+        fi
+
+        git add .
+
+        if git diff --cached --quiet; then
+          echo "✅ 没有变更，跳过提交"
+        else
+          git commit -m "📊 信用数据更新 [${ts}]"
+          git push origin main
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
