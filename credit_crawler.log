@@ -1,0 +1,1407 @@
+2025-05-16 08:07:47,594 - __main__ - INFO - === 启动系统诊断 ===
+2025-05-16 08:07:48,238 - __main__ - INFO - 网络连通性测试: 状态码 200
+2025-05-16 08:07:48,238 - __main__ - INFO - === 爬虫启动 ===
+2025-05-16 08:07:48,238 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747382868238
+2025-05-16 08:07:48,601 - __main__ - INFO - 验证码刷新成功: ApVP****
+2025-05-16 08:07:48,602 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=1&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:49,221 - __main__ - INFO - 总记录数: 6707
+2025-05-16 08:07:49,221 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=1&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:49,778 - __main__ - INFO - 成功获取第 1/671 页，累计 10 条
+2025-05-16 08:07:49,778 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=2&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:50,550 - __main__ - INFO - 成功获取第 2/671 页，累计 20 条
+2025-05-16 08:07:50,550 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=3&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:51,135 - __main__ - INFO - 成功获取第 3/671 页，累计 30 条
+2025-05-16 08:07:51,135 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=4&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:51,685 - __main__ - INFO - 成功获取第 4/671 页，累计 40 条
+2025-05-16 08:07:51,685 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=5&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:53,344 - __main__ - INFO - 成功获取第 5/671 页，累计 50 条
+2025-05-16 08:07:53,344 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=6&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:53,896 - __main__ - INFO - 成功获取第 6/671 页，累计 60 条
+2025-05-16 08:07:53,896 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=7&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:54,410 - __main__ - INFO - 成功获取第 7/671 页，累计 70 条
+2025-05-16 08:07:54,411 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=8&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:54,918 - __main__ - INFO - 成功获取第 8/671 页，累计 80 条
+2025-05-16 08:07:54,919 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=9&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:55,513 - __main__ - INFO - 成功获取第 9/671 页，累计 90 条
+2025-05-16 08:07:55,513 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=10&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:56,059 - __main__ - INFO - 成功获取第 10/671 页，累计 100 条
+2025-05-16 08:07:56,059 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=11&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:56,575 - __main__ - INFO - 成功获取第 11/671 页，累计 110 条
+2025-05-16 08:07:56,575 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=12&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:57,063 - __main__ - INFO - 成功获取第 12/671 页，累计 120 条
+2025-05-16 08:07:57,063 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=13&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:57,673 - __main__ - INFO - 成功获取第 13/671 页，累计 130 条
+2025-05-16 08:07:57,673 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=14&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:58,239 - __main__ - INFO - 成功获取第 14/671 页，累计 140 条
+2025-05-16 08:07:58,239 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=15&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:58,827 - __main__ - INFO - 成功获取第 15/671 页，累计 150 条
+2025-05-16 08:07:58,827 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=16&code=ApVP&codeValue=1747382868238
+2025-05-16 08:07:59,397 - __main__ - INFO - 成功获取第 16/671 页，累计 160 条
+2025-05-16 08:07:59,397 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=17&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:00,090 - __main__ - INFO - 成功获取第 17/671 页，累计 170 条
+2025-05-16 08:08:00,090 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=18&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:00,662 - __main__ - INFO - 成功获取第 18/671 页，累计 180 条
+2025-05-16 08:08:00,662 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=19&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:01,278 - __main__ - INFO - 成功获取第 19/671 页，累计 190 条
+2025-05-16 08:08:01,278 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=20&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:01,939 - __main__ - INFO - 成功获取第 20/671 页，累计 200 条
+2025-05-16 08:08:01,939 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=21&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:02,475 - __main__ - INFO - 成功获取第 21/671 页，累计 210 条
+2025-05-16 08:08:02,475 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=22&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:03,119 - __main__ - INFO - 成功获取第 22/671 页，累计 220 条
+2025-05-16 08:08:03,119 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=23&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:03,701 - __main__ - INFO - 成功获取第 23/671 页，累计 230 条
+2025-05-16 08:08:03,701 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=24&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:04,304 - __main__ - INFO - 成功获取第 24/671 页，累计 240 条
+2025-05-16 08:08:04,305 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=25&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:05,116 - __main__ - INFO - 成功获取第 25/671 页，累计 250 条
+2025-05-16 08:08:05,116 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=26&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:05,654 - __main__ - INFO - 成功获取第 26/671 页，累计 260 条
+2025-05-16 08:08:05,654 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=27&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:07,001 - __main__ - INFO - 成功获取第 27/671 页，累计 270 条
+2025-05-16 08:08:07,001 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=28&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:07,744 - __main__ - INFO - 成功获取第 28/671 页，累计 280 条
+2025-05-16 08:08:07,744 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=29&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:08,304 - __main__ - INFO - 成功获取第 29/671 页，累计 290 条
+2025-05-16 08:08:08,304 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=30&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:09,000 - __main__ - INFO - 成功获取第 30/671 页，累计 300 条
+2025-05-16 08:08:09,000 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=31&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:09,625 - __main__ - INFO - 成功获取第 31/671 页，累计 310 条
+2025-05-16 08:08:09,626 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=32&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:10,153 - __main__ - INFO - 成功获取第 32/671 页，累计 320 条
+2025-05-16 08:08:10,153 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=33&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:11,214 - __main__ - INFO - 成功获取第 33/671 页，累计 330 条
+2025-05-16 08:08:11,214 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=34&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:11,739 - __main__ - INFO - 成功获取第 34/671 页，累计 340 条
+2025-05-16 08:08:11,739 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=35&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:12,317 - __main__ - INFO - 成功获取第 35/671 页，累计 350 条
+2025-05-16 08:08:12,317 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=36&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:12,905 - __main__ - INFO - 成功获取第 36/671 页，累计 360 条
+2025-05-16 08:08:12,905 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=37&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:13,517 - __main__ - INFO - 成功获取第 37/671 页，累计 370 条
+2025-05-16 08:08:13,517 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=38&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:14,115 - __main__ - INFO - 成功获取第 38/671 页，累计 380 条
+2025-05-16 08:08:14,116 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=39&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:14,679 - __main__ - INFO - 成功获取第 39/671 页，累计 390 条
+2025-05-16 08:08:14,679 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=40&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:15,261 - __main__ - INFO - 成功获取第 40/671 页，累计 400 条
+2025-05-16 08:08:15,261 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=41&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:16,136 - __main__ - INFO - 成功获取第 41/671 页，累计 410 条
+2025-05-16 08:08:16,136 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=42&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:16,741 - __main__ - INFO - 成功获取第 42/671 页，累计 420 条
+2025-05-16 08:08:16,742 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=43&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:17,317 - __main__ - INFO - 成功获取第 43/671 页，累计 430 条
+2025-05-16 08:08:17,318 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=44&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:17,917 - __main__ - INFO - 成功获取第 44/671 页，累计 440 条
+2025-05-16 08:08:17,917 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=45&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:18,477 - __main__ - INFO - 成功获取第 45/671 页，累计 450 条
+2025-05-16 08:08:18,477 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=46&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:19,091 - __main__ - INFO - 成功获取第 46/671 页，累计 460 条
+2025-05-16 08:08:19,091 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=47&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:20,262 - __main__ - INFO - 成功获取第 47/671 页，累计 470 条
+2025-05-16 08:08:20,262 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=48&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:20,808 - __main__ - INFO - 成功获取第 48/671 页，累计 480 条
+2025-05-16 08:08:20,808 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=49&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:21,372 - __main__ - INFO - 成功获取第 49/671 页，累计 490 条
+2025-05-16 08:08:21,373 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=50&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:21,958 - __main__ - INFO - 成功获取第 50/671 页，累计 500 条
+2025-05-16 08:08:21,958 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=51&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:22,568 - __main__ - INFO - 成功获取第 51/671 页，累计 510 条
+2025-05-16 08:08:22,568 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=52&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:23,138 - __main__ - INFO - 成功获取第 52/671 页，累计 520 条
+2025-05-16 08:08:23,138 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=53&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:23,705 - __main__ - INFO - 成功获取第 53/671 页，累计 530 条
+2025-05-16 08:08:23,706 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=54&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:24,304 - __main__ - INFO - 成功获取第 54/671 页，累计 540 条
+2025-05-16 08:08:24,304 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=55&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:24,875 - __main__ - INFO - 成功获取第 55/671 页，累计 550 条
+2025-05-16 08:08:24,875 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=56&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:25,447 - __main__ - INFO - 成功获取第 56/671 页，累计 560 条
+2025-05-16 08:08:25,447 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=57&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:26,017 - __main__ - INFO - 成功获取第 57/671 页，累计 570 条
+2025-05-16 08:08:26,017 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=58&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:26,559 - __main__ - INFO - 成功获取第 58/671 页，累计 580 条
+2025-05-16 08:08:26,559 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=59&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:27,181 - __main__ - INFO - 成功获取第 59/671 页，累计 590 条
+2025-05-16 08:08:27,181 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=60&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:27,751 - __main__ - INFO - 成功获取第 60/671 页，累计 600 条
+2025-05-16 08:08:27,751 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=61&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:28,358 - __main__ - INFO - 成功获取第 61/671 页，累计 610 条
+2025-05-16 08:08:28,358 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=62&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:29,010 - __main__ - INFO - 成功获取第 62/671 页，累计 620 条
+2025-05-16 08:08:29,011 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=63&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:29,646 - __main__ - INFO - 成功获取第 63/671 页，累计 630 条
+2025-05-16 08:08:29,646 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=64&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:30,208 - __main__ - INFO - 成功获取第 64/671 页，累计 640 条
+2025-05-16 08:08:30,208 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=65&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:30,767 - __main__ - INFO - 成功获取第 65/671 页，累计 650 条
+2025-05-16 08:08:30,767 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=66&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:31,316 - __main__ - INFO - 成功获取第 66/671 页，累计 660 条
+2025-05-16 08:08:31,316 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=67&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:32,252 - __main__ - INFO - 成功获取第 67/671 页，累计 670 条
+2025-05-16 08:08:32,252 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=68&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:33,095 - __main__ - INFO - 成功获取第 68/671 页，累计 680 条
+2025-05-16 08:08:33,095 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=69&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:33,689 - __main__ - INFO - 成功获取第 69/671 页，累计 690 条
+2025-05-16 08:08:33,689 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=70&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:34,236 - __main__ - INFO - 成功获取第 70/671 页，累计 700 条
+2025-05-16 08:08:34,236 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=71&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:34,792 - __main__ - INFO - 成功获取第 71/671 页，累计 710 条
+2025-05-16 08:08:34,792 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=72&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:35,376 - __main__ - INFO - 成功获取第 72/671 页，累计 720 条
+2025-05-16 08:08:35,376 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=73&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:35,937 - __main__ - INFO - 成功获取第 73/671 页，累计 730 条
+2025-05-16 08:08:35,937 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=74&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:36,504 - __main__ - INFO - 成功获取第 74/671 页，累计 740 条
+2025-05-16 08:08:36,505 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=75&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:37,116 - __main__ - INFO - 成功获取第 75/671 页，累计 750 条
+2025-05-16 08:08:37,116 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=76&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:37,676 - __main__ - INFO - 成功获取第 76/671 页，累计 760 条
+2025-05-16 08:08:37,676 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=77&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:38,252 - __main__ - INFO - 成功获取第 77/671 页，累计 770 条
+2025-05-16 08:08:38,252 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=78&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:38,845 - __main__ - INFO - 成功获取第 78/671 页，累计 780 条
+2025-05-16 08:08:38,845 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=79&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:39,364 - __main__ - INFO - 成功获取第 79/671 页，累计 790 条
+2025-05-16 08:08:39,364 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=80&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:39,974 - __main__ - INFO - 成功获取第 80/671 页，累计 800 条
+2025-05-16 08:08:39,975 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=81&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:40,477 - __main__ - INFO - 成功获取第 81/671 页，累计 810 条
+2025-05-16 08:08:40,477 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=82&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:41,112 - __main__ - INFO - 成功获取第 82/671 页，累计 820 条
+2025-05-16 08:08:41,112 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=83&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:41,670 - __main__ - INFO - 成功获取第 83/671 页，累计 830 条
+2025-05-16 08:08:41,670 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=84&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:42,387 - __main__ - INFO - 成功获取第 84/671 页，累计 840 条
+2025-05-16 08:08:42,388 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=85&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:42,982 - __main__ - INFO - 成功获取第 85/671 页，累计 850 条
+2025-05-16 08:08:42,982 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=86&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:43,516 - __main__ - INFO - 成功获取第 86/671 页，累计 860 条
+2025-05-16 08:08:43,516 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=87&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:44,170 - __main__ - INFO - 成功获取第 87/671 页，累计 870 条
+2025-05-16 08:08:44,171 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=88&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:44,778 - __main__ - INFO - 成功获取第 88/671 页，累计 880 条
+2025-05-16 08:08:44,779 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=89&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:45,359 - __main__ - INFO - 成功获取第 89/671 页，累计 890 条
+2025-05-16 08:08:45,359 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=90&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:45,919 - __main__ - INFO - 成功获取第 90/671 页，累计 900 条
+2025-05-16 08:08:45,920 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=91&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:46,454 - __main__ - INFO - 成功获取第 91/671 页，累计 910 条
+2025-05-16 08:08:46,455 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=92&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:47,059 - __main__ - INFO - 成功获取第 92/671 页，累计 920 条
+2025-05-16 08:08:47,059 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=93&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:47,628 - __main__ - INFO - 成功获取第 93/671 页，累计 930 条
+2025-05-16 08:08:47,628 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=94&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:48,288 - __main__ - INFO - 成功获取第 94/671 页，累计 940 条
+2025-05-16 08:08:48,288 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=95&code=ApVP&codeValue=1747382868238
+2025-05-16 08:08:48,685 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:08:48,685 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:08:48,685 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:08:48,685 - __main__ - WARNING - 第 95 页第 1 次重试，错误: 空数据集
+2025-05-16 08:08:48,685 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747382928685
+2025-05-16 08:08:49,030 - __main__ - INFO - 验证码刷新成功: GNTP****
+2025-05-16 08:08:49,030 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=95&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:49,604 - __main__ - INFO - 成功获取第 95/671 页，累计 950 条
+2025-05-16 08:08:49,605 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=96&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:50,148 - __main__ - INFO - 成功获取第 96/671 页，累计 960 条
+2025-05-16 08:08:50,148 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=97&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:50,763 - __main__ - INFO - 成功获取第 97/671 页，累计 970 条
+2025-05-16 08:08:50,763 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=98&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:51,316 - __main__ - INFO - 成功获取第 98/671 页，累计 980 条
+2025-05-16 08:08:51,316 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=99&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:51,931 - __main__ - INFO - 成功获取第 99/671 页，累计 990 条
+2025-05-16 08:08:51,932 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=100&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:52,569 - __main__ - INFO - 成功获取第 100/671 页，累计 1000 条
+2025-05-16 08:08:52,569 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=101&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:53,180 - __main__ - INFO - 成功获取第 101/671 页，累计 1010 条
+2025-05-16 08:08:53,181 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=102&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:53,737 - __main__ - INFO - 成功获取第 102/671 页，累计 1020 条
+2025-05-16 08:08:53,737 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=103&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:54,348 - __main__ - INFO - 成功获取第 103/671 页，累计 1030 条
+2025-05-16 08:08:54,348 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=104&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:54,915 - __main__ - INFO - 成功获取第 104/671 页，累计 1040 条
+2025-05-16 08:08:54,916 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=105&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:55,615 - __main__ - INFO - 成功获取第 105/671 页，累计 1050 条
+2025-05-16 08:08:55,615 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=106&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:56,230 - __main__ - INFO - 成功获取第 106/671 页，累计 1060 条
+2025-05-16 08:08:56,231 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=107&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:56,815 - __main__ - INFO - 成功获取第 107/671 页，累计 1070 条
+2025-05-16 08:08:56,815 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=108&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:57,361 - __main__ - INFO - 成功获取第 108/671 页，累计 1080 条
+2025-05-16 08:08:57,362 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=109&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:57,942 - __main__ - INFO - 成功获取第 109/671 页，累计 1090 条
+2025-05-16 08:08:57,942 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=110&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:58,534 - __main__ - INFO - 成功获取第 110/671 页，累计 1100 条
+2025-05-16 08:08:58,534 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=111&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:59,136 - __main__ - INFO - 成功获取第 111/671 页，累计 1110 条
+2025-05-16 08:08:59,136 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=112&code=GNTP&codeValue=1747382928685
+2025-05-16 08:08:59,741 - __main__ - INFO - 成功获取第 112/671 页，累计 1120 条
+2025-05-16 08:08:59,741 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=113&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:00,350 - __main__ - INFO - 成功获取第 113/671 页，累计 1130 条
+2025-05-16 08:09:00,350 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=114&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:00,931 - __main__ - INFO - 成功获取第 114/671 页，累计 1140 条
+2025-05-16 08:09:00,931 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=115&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:02,261 - __main__ - INFO - 成功获取第 115/671 页，累计 1150 条
+2025-05-16 08:09:02,261 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=116&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:02,787 - __main__ - INFO - 成功获取第 116/671 页，累计 1160 条
+2025-05-16 08:09:02,787 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=117&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:03,356 - __main__ - INFO - 成功获取第 117/671 页，累计 1170 条
+2025-05-16 08:09:03,357 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=118&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:03,906 - __main__ - INFO - 成功获取第 118/671 页，累计 1180 条
+2025-05-16 08:09:03,906 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=119&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:04,553 - __main__ - INFO - 成功获取第 119/671 页，累计 1190 条
+2025-05-16 08:09:04,554 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=120&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:05,131 - __main__ - INFO - 成功获取第 120/671 页，累计 1200 条
+2025-05-16 08:09:05,131 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=121&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:05,745 - __main__ - INFO - 成功获取第 121/671 页，累计 1210 条
+2025-05-16 08:09:05,745 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=122&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:06,591 - __main__ - INFO - 成功获取第 122/671 页，累计 1220 条
+2025-05-16 08:09:06,591 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=123&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:07,245 - __main__ - INFO - 成功获取第 123/671 页，累计 1230 条
+2025-05-16 08:09:07,245 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=124&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:07,815 - __main__ - INFO - 成功获取第 124/671 页，累计 1240 条
+2025-05-16 08:09:07,815 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=125&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:08,402 - __main__ - INFO - 成功获取第 125/671 页，累计 1250 条
+2025-05-16 08:09:08,402 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=126&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:08,950 - __main__ - INFO - 成功获取第 126/671 页，累计 1260 条
+2025-05-16 08:09:08,951 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=127&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:09,522 - __main__ - INFO - 成功获取第 127/671 页，累计 1270 条
+2025-05-16 08:09:09,523 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=128&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:10,134 - __main__ - INFO - 成功获取第 128/671 页，累计 1280 条
+2025-05-16 08:09:10,134 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=129&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:10,739 - __main__ - INFO - 成功获取第 129/671 页，累计 1290 条
+2025-05-16 08:09:10,739 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=130&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:12,122 - __main__ - INFO - 成功获取第 130/671 页，累计 1300 条
+2025-05-16 08:09:12,122 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=131&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:13,298 - __main__ - INFO - 成功获取第 131/671 页，累计 1310 条
+2025-05-16 08:09:13,299 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=132&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:13,917 - __main__ - INFO - 成功获取第 132/671 页，累计 1320 条
+2025-05-16 08:09:13,917 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=133&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:14,970 - __main__ - INFO - 成功获取第 133/671 页，累计 1330 条
+2025-05-16 08:09:14,970 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=134&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:15,553 - __main__ - INFO - 成功获取第 134/671 页，累计 1340 条
+2025-05-16 08:09:15,553 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=135&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:16,136 - __main__ - INFO - 成功获取第 135/671 页，累计 1350 条
+2025-05-16 08:09:16,137 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=136&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:16,716 - __main__ - INFO - 成功获取第 136/671 页，累计 1360 条
+2025-05-16 08:09:16,716 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=137&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:17,352 - __main__ - INFO - 成功获取第 137/671 页，累计 1370 条
+2025-05-16 08:09:17,353 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=138&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:19,141 - __main__ - INFO - 成功获取第 138/671 页，累计 1380 条
+2025-05-16 08:09:19,141 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=139&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:19,805 - __main__ - INFO - 成功获取第 139/671 页，累计 1390 条
+2025-05-16 08:09:19,805 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=140&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:20,438 - __main__ - INFO - 成功获取第 140/671 页，累计 1400 条
+2025-05-16 08:09:20,438 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=141&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:21,079 - __main__ - INFO - 成功获取第 141/671 页，累计 1410 条
+2025-05-16 08:09:21,079 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=142&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:21,637 - __main__ - INFO - 成功获取第 142/671 页，累计 1420 条
+2025-05-16 08:09:21,637 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=143&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:22,241 - __main__ - INFO - 成功获取第 143/671 页，累计 1430 条
+2025-05-16 08:09:22,241 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=144&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:22,852 - __main__ - INFO - 成功获取第 144/671 页，累计 1440 条
+2025-05-16 08:09:22,852 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=145&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:24,105 - __main__ - INFO - 成功获取第 145/671 页，累计 1450 条
+2025-05-16 08:09:24,105 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=146&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:24,695 - __main__ - INFO - 成功获取第 146/671 页，累计 1460 条
+2025-05-16 08:09:24,695 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=147&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:25,270 - __main__ - INFO - 成功获取第 147/671 页，累计 1470 条
+2025-05-16 08:09:25,270 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=148&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:25,797 - __main__ - INFO - 成功获取第 148/671 页，累计 1480 条
+2025-05-16 08:09:25,797 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=149&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:26,344 - __main__ - INFO - 成功获取第 149/671 页，累计 1490 条
+2025-05-16 08:09:26,345 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=150&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:26,910 - __main__ - INFO - 成功获取第 150/671 页，累计 1500 条
+2025-05-16 08:09:26,910 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=151&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:27,445 - __main__ - INFO - 成功获取第 151/671 页，累计 1510 条
+2025-05-16 08:09:27,445 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=152&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:28,056 - __main__ - INFO - 成功获取第 152/671 页，累计 1520 条
+2025-05-16 08:09:28,056 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=153&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:28,639 - __main__ - INFO - 成功获取第 153/671 页，累计 1530 条
+2025-05-16 08:09:28,640 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=154&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:29,170 - __main__ - INFO - 成功获取第 154/671 页，累计 1540 条
+2025-05-16 08:09:29,170 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=155&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:29,783 - __main__ - INFO - 成功获取第 155/671 页，累计 1550 条
+2025-05-16 08:09:29,783 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=156&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:30,306 - __main__ - INFO - 成功获取第 156/671 页，累计 1560 条
+2025-05-16 08:09:30,306 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=157&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:30,851 - __main__ - INFO - 成功获取第 157/671 页，累计 1570 条
+2025-05-16 08:09:30,851 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=158&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:32,176 - __main__ - INFO - 成功获取第 158/671 页，累计 1580 条
+2025-05-16 08:09:32,176 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=159&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:34,719 - __main__ - INFO - 成功获取第 159/671 页，累计 1590 条
+2025-05-16 08:09:34,719 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=160&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:35,301 - __main__ - INFO - 成功获取第 160/671 页，累计 1600 条
+2025-05-16 08:09:35,302 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=161&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:35,925 - __main__ - INFO - 成功获取第 161/671 页，累计 1610 条
+2025-05-16 08:09:35,925 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=162&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:38,479 - __main__ - INFO - 成功获取第 162/671 页，累计 1620 条
+2025-05-16 08:09:38,479 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=163&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:39,038 - __main__ - INFO - 成功获取第 163/671 页，累计 1630 条
+2025-05-16 08:09:39,038 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=164&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:39,579 - __main__ - INFO - 成功获取第 164/671 页，累计 1640 条
+2025-05-16 08:09:39,579 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=165&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:40,119 - __main__ - INFO - 成功获取第 165/671 页，累计 1650 条
+2025-05-16 08:09:40,119 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=166&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:40,718 - __main__ - INFO - 成功获取第 166/671 页，累计 1660 条
+2025-05-16 08:09:40,718 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=167&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:41,315 - __main__ - INFO - 成功获取第 167/671 页，累计 1670 条
+2025-05-16 08:09:41,315 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=168&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:41,858 - __main__ - INFO - 成功获取第 168/671 页，累计 1680 条
+2025-05-16 08:09:41,858 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=169&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:42,421 - __main__ - INFO - 成功获取第 169/671 页，累计 1690 条
+2025-05-16 08:09:42,421 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=170&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:44,505 - __main__ - INFO - 成功获取第 170/671 页，累计 1700 条
+2025-05-16 08:09:44,505 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=171&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:45,162 - __main__ - INFO - 成功获取第 171/671 页，累计 1710 条
+2025-05-16 08:09:45,162 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=172&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:45,727 - __main__ - INFO - 成功获取第 172/671 页，累计 1720 条
+2025-05-16 08:09:45,727 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=173&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:46,300 - __main__ - INFO - 成功获取第 173/671 页，累计 1730 条
+2025-05-16 08:09:46,300 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=174&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:46,823 - __main__ - INFO - 成功获取第 174/671 页，累计 1740 条
+2025-05-16 08:09:46,823 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=175&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:47,364 - __main__ - INFO - 成功获取第 175/671 页，累计 1750 条
+2025-05-16 08:09:47,364 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=176&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:47,894 - __main__ - INFO - 成功获取第 176/671 页，累计 1760 条
+2025-05-16 08:09:47,894 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=177&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:48,463 - __main__ - INFO - 成功获取第 177/671 页，累计 1770 条
+2025-05-16 08:09:48,463 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=178&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:48,999 - __main__ - INFO - 成功获取第 178/671 页，累计 1780 条
+2025-05-16 08:09:48,999 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=179&code=GNTP&codeValue=1747382928685
+2025-05-16 08:09:49,361 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:09:49,361 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:09:49,361 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:09:49,361 - __main__ - WARNING - 第 179 页第 1 次重试，错误: 空数据集
+2025-05-16 08:09:49,361 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747382989361
+2025-05-16 08:09:49,742 - __main__ - INFO - 验证码刷新成功: gUPq****
+2025-05-16 08:09:49,742 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=179&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:50,289 - __main__ - INFO - 成功获取第 179/671 页，累计 1790 条
+2025-05-16 08:09:50,290 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=180&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:50,814 - __main__ - INFO - 成功获取第 180/671 页，累计 1800 条
+2025-05-16 08:09:50,814 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=181&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:51,392 - __main__ - INFO - 成功获取第 181/671 页，累计 1810 条
+2025-05-16 08:09:51,392 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=182&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:51,910 - __main__ - INFO - 成功获取第 182/671 页，累计 1820 条
+2025-05-16 08:09:51,911 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=183&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:52,449 - __main__ - INFO - 成功获取第 183/671 页，累计 1830 条
+2025-05-16 08:09:52,450 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=184&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:52,970 - __main__ - INFO - 成功获取第 184/671 页，累计 1840 条
+2025-05-16 08:09:52,970 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=185&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:53,537 - __main__ - INFO - 成功获取第 185/671 页，累计 1850 条
+2025-05-16 08:09:53,537 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=186&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:54,081 - __main__ - INFO - 成功获取第 186/671 页，累计 1860 条
+2025-05-16 08:09:54,081 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=187&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:54,649 - __main__ - INFO - 成功获取第 187/671 页，累计 1870 条
+2025-05-16 08:09:54,649 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=188&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:55,221 - __main__ - INFO - 成功获取第 188/671 页，累计 1880 条
+2025-05-16 08:09:55,222 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=189&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:55,739 - __main__ - INFO - 成功获取第 189/671 页，累计 1890 条
+2025-05-16 08:09:55,739 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=190&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:56,323 - __main__ - INFO - 成功获取第 190/671 页，累计 1900 条
+2025-05-16 08:09:56,323 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=191&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:57,186 - __main__ - INFO - 成功获取第 191/671 页，累计 1910 条
+2025-05-16 08:09:57,186 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=192&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:57,737 - __main__ - INFO - 成功获取第 192/671 页，累计 1920 条
+2025-05-16 08:09:57,738 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=193&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:58,363 - __main__ - INFO - 成功获取第 193/671 页，累计 1930 条
+2025-05-16 08:09:58,363 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=194&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:59,005 - __main__ - INFO - 成功获取第 194/671 页，累计 1940 条
+2025-05-16 08:09:59,005 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=195&code=gUPq&codeValue=1747382989361
+2025-05-16 08:09:59,634 - __main__ - INFO - 成功获取第 195/671 页，累计 1950 条
+2025-05-16 08:09:59,634 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=196&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:00,148 - __main__ - INFO - 成功获取第 196/671 页，累计 1960 条
+2025-05-16 08:10:00,148 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=197&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:00,735 - __main__ - INFO - 成功获取第 197/671 页，累计 1970 条
+2025-05-16 08:10:00,735 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=198&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:01,290 - __main__ - INFO - 成功获取第 198/671 页，累计 1980 条
+2025-05-16 08:10:01,290 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=199&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:01,914 - __main__ - INFO - 成功获取第 199/671 页，累计 1990 条
+2025-05-16 08:10:01,914 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=200&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:02,492 - __main__ - INFO - 成功获取第 200/671 页，累计 2000 条
+2025-05-16 08:10:02,492 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=201&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:03,073 - __main__ - INFO - 成功获取第 201/671 页，累计 2010 条
+2025-05-16 08:10:03,073 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=202&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:03,688 - __main__ - INFO - 成功获取第 202/671 页，累计 2020 条
+2025-05-16 08:10:03,688 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=203&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:04,311 - __main__ - INFO - 成功获取第 203/671 页，累计 2030 条
+2025-05-16 08:10:04,311 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=204&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:04,904 - __main__ - INFO - 成功获取第 204/671 页，累计 2040 条
+2025-05-16 08:10:04,905 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=205&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:05,445 - __main__ - INFO - 成功获取第 205/671 页，累计 2050 条
+2025-05-16 08:10:05,445 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=206&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:05,983 - __main__ - INFO - 成功获取第 206/671 页，累计 2060 条
+2025-05-16 08:10:05,983 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=207&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:06,606 - __main__ - INFO - 成功获取第 207/671 页，累计 2070 条
+2025-05-16 08:10:06,606 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=208&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:07,230 - __main__ - INFO - 成功获取第 208/671 页，累计 2080 条
+2025-05-16 08:10:07,231 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=209&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:07,825 - __main__ - INFO - 成功获取第 209/671 页，累计 2090 条
+2025-05-16 08:10:07,825 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=210&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:08,418 - __main__ - INFO - 成功获取第 210/671 页，累计 2100 条
+2025-05-16 08:10:08,419 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=211&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:08,994 - __main__ - INFO - 成功获取第 211/671 页，累计 2110 条
+2025-05-16 08:10:08,994 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=212&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:11,317 - __main__ - INFO - 成功获取第 212/671 页，累计 2120 条
+2025-05-16 08:10:11,317 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=213&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:11,913 - __main__ - INFO - 成功获取第 213/671 页，累计 2130 条
+2025-05-16 08:10:11,914 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=214&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:12,456 - __main__ - INFO - 成功获取第 214/671 页，累计 2140 条
+2025-05-16 08:10:12,456 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=215&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:13,023 - __main__ - INFO - 成功获取第 215/671 页，累计 2150 条
+2025-05-16 08:10:13,023 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=216&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:13,642 - __main__ - INFO - 成功获取第 216/671 页，累计 2160 条
+2025-05-16 08:10:13,642 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=217&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:14,231 - __main__ - INFO - 成功获取第 217/671 页，累计 2170 条
+2025-05-16 08:10:14,231 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=218&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:14,796 - __main__ - INFO - 成功获取第 218/671 页，累计 2180 条
+2025-05-16 08:10:14,796 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=219&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:15,462 - __main__ - INFO - 成功获取第 219/671 页，累计 2190 条
+2025-05-16 08:10:15,462 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=220&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:16,017 - __main__ - INFO - 成功获取第 220/671 页，累计 2200 条
+2025-05-16 08:10:16,017 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=221&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:16,537 - __main__ - INFO - 成功获取第 221/671 页，累计 2210 条
+2025-05-16 08:10:16,537 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=222&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:17,146 - __main__ - INFO - 成功获取第 222/671 页，累计 2220 条
+2025-05-16 08:10:17,147 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=223&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:17,702 - __main__ - INFO - 成功获取第 223/671 页，累计 2230 条
+2025-05-16 08:10:17,702 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=224&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:19,733 - __main__ - INFO - 成功获取第 224/671 页，累计 2240 条
+2025-05-16 08:10:19,733 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=225&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:20,309 - __main__ - INFO - 成功获取第 225/671 页，累计 2250 条
+2025-05-16 08:10:20,309 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=226&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:21,129 - __main__ - INFO - 成功获取第 226/671 页，累计 2260 条
+2025-05-16 08:10:21,130 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=227&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:21,811 - __main__ - INFO - 成功获取第 227/671 页，累计 2270 条
+2025-05-16 08:10:21,811 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=228&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:22,405 - __main__ - INFO - 成功获取第 228/671 页，累计 2280 条
+2025-05-16 08:10:22,405 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=229&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:23,058 - __main__ - INFO - 成功获取第 229/671 页，累计 2290 条
+2025-05-16 08:10:23,058 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=230&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:23,830 - __main__ - INFO - 成功获取第 230/671 页，累计 2300 条
+2025-05-16 08:10:23,830 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=231&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:24,508 - __main__ - INFO - 成功获取第 231/671 页，累计 2310 条
+2025-05-16 08:10:24,508 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=232&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:25,154 - __main__ - INFO - 成功获取第 232/671 页，累计 2320 条
+2025-05-16 08:10:25,154 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=233&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:25,777 - __main__ - INFO - 成功获取第 233/671 页，累计 2330 条
+2025-05-16 08:10:25,777 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=234&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:26,391 - __main__ - INFO - 成功获取第 234/671 页，累计 2340 条
+2025-05-16 08:10:26,392 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=235&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:26,998 - __main__ - INFO - 成功获取第 235/671 页，累计 2350 条
+2025-05-16 08:10:26,998 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=236&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:27,624 - __main__ - INFO - 成功获取第 236/671 页，累计 2360 条
+2025-05-16 08:10:27,624 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=237&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:28,236 - __main__ - INFO - 成功获取第 237/671 页，累计 2370 条
+2025-05-16 08:10:28,236 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=238&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:28,911 - __main__ - INFO - 成功获取第 238/671 页，累计 2380 条
+2025-05-16 08:10:28,911 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=239&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:29,456 - __main__ - INFO - 成功获取第 239/671 页，累计 2390 条
+2025-05-16 08:10:29,456 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=240&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:30,036 - __main__ - INFO - 成功获取第 240/671 页，累计 2400 条
+2025-05-16 08:10:30,036 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=241&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:30,741 - __main__ - INFO - 成功获取第 241/671 页，累计 2410 条
+2025-05-16 08:10:30,741 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=242&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:31,375 - __main__ - INFO - 成功获取第 242/671 页，累计 2420 条
+2025-05-16 08:10:31,375 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=243&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:32,035 - __main__ - INFO - 成功获取第 243/671 页，累计 2430 条
+2025-05-16 08:10:32,035 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=244&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:32,668 - __main__ - INFO - 成功获取第 244/671 页，累计 2440 条
+2025-05-16 08:10:32,668 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=245&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:33,328 - __main__ - INFO - 成功获取第 245/671 页，累计 2450 条
+2025-05-16 08:10:33,328 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=246&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:34,011 - __main__ - INFO - 成功获取第 246/671 页，累计 2460 条
+2025-05-16 08:10:34,011 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=247&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:34,677 - __main__ - INFO - 成功获取第 247/671 页，累计 2470 条
+2025-05-16 08:10:34,678 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=248&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:35,431 - __main__ - INFO - 成功获取第 248/671 页，累计 2480 条
+2025-05-16 08:10:35,431 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=249&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:36,087 - __main__ - INFO - 成功获取第 249/671 页，累计 2490 条
+2025-05-16 08:10:36,087 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=250&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:36,769 - __main__ - INFO - 成功获取第 250/671 页，累计 2500 条
+2025-05-16 08:10:36,769 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=251&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:37,327 - __main__ - INFO - 成功获取第 251/671 页，累计 2510 条
+2025-05-16 08:10:37,327 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=252&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:37,943 - __main__ - INFO - 成功获取第 252/671 页，累计 2520 条
+2025-05-16 08:10:37,943 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=253&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:38,554 - __main__ - INFO - 成功获取第 253/671 页，累计 2530 条
+2025-05-16 08:10:38,554 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=254&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:40,605 - __main__ - INFO - 成功获取第 254/671 页，累计 2540 条
+2025-05-16 08:10:40,605 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=255&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:41,225 - __main__ - INFO - 成功获取第 255/671 页，累计 2550 条
+2025-05-16 08:10:41,225 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=256&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:41,871 - __main__ - INFO - 成功获取第 256/671 页，累计 2560 条
+2025-05-16 08:10:41,871 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=257&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:42,469 - __main__ - INFO - 成功获取第 257/671 页，累计 2570 条
+2025-05-16 08:10:42,469 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=258&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:43,068 - __main__ - INFO - 成功获取第 258/671 页，累计 2580 条
+2025-05-16 08:10:43,068 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=259&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:43,704 - __main__ - INFO - 成功获取第 259/671 页，累计 2590 条
+2025-05-16 08:10:43,704 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=260&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:44,283 - __main__ - INFO - 成功获取第 260/671 页，累计 2600 条
+2025-05-16 08:10:44,284 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=261&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:44,825 - __main__ - INFO - 成功获取第 261/671 页，累计 2610 条
+2025-05-16 08:10:44,825 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=262&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:45,400 - __main__ - INFO - 成功获取第 262/671 页，累计 2620 条
+2025-05-16 08:10:45,401 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=263&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:46,009 - __main__ - INFO - 成功获取第 263/671 页，累计 2630 条
+2025-05-16 08:10:46,009 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=264&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:46,662 - __main__ - INFO - 成功获取第 264/671 页，累计 2640 条
+2025-05-16 08:10:46,662 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=265&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:47,326 - __main__ - INFO - 成功获取第 265/671 页，累计 2650 条
+2025-05-16 08:10:47,326 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=266&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:47,942 - __main__ - INFO - 成功获取第 266/671 页，累计 2660 条
+2025-05-16 08:10:47,943 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=267&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:48,646 - __main__ - INFO - 成功获取第 267/671 页，累计 2670 条
+2025-05-16 08:10:48,646 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=268&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:49,309 - __main__ - INFO - 成功获取第 268/671 页，累计 2680 条
+2025-05-16 08:10:49,309 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=269&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:51,593 - __main__ - INFO - 成功获取第 269/671 页，累计 2690 条
+2025-05-16 08:10:51,594 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=270&code=gUPq&codeValue=1747382989361
+2025-05-16 08:10:51,954 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:10:51,954 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:10:51,954 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:10:51,954 - __main__ - WARNING - 第 270 页第 1 次重试，错误: 空数据集
+2025-05-16 08:10:51,955 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383051955
+2025-05-16 08:10:52,361 - __main__ - INFO - 验证码刷新成功: U4d0****
+2025-05-16 08:10:52,361 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=270&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:52,967 - __main__ - INFO - 成功获取第 270/671 页，累计 2700 条
+2025-05-16 08:10:52,968 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=271&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:53,515 - __main__ - INFO - 成功获取第 271/671 页，累计 2710 条
+2025-05-16 08:10:53,515 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=272&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:54,304 - __main__ - INFO - 成功获取第 272/671 页，累计 2720 条
+2025-05-16 08:10:54,304 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=273&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:54,919 - __main__ - INFO - 成功获取第 273/671 页，累计 2730 条
+2025-05-16 08:10:54,919 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=274&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:55,524 - __main__ - INFO - 成功获取第 274/671 页，累计 2740 条
+2025-05-16 08:10:55,524 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=275&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:56,190 - __main__ - INFO - 成功获取第 275/671 页，累计 2750 条
+2025-05-16 08:10:56,190 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=276&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:56,796 - __main__ - INFO - 成功获取第 276/671 页，累计 2760 条
+2025-05-16 08:10:56,797 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=277&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:57,388 - __main__ - INFO - 成功获取第 277/671 页，累计 2770 条
+2025-05-16 08:10:57,388 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=278&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:57,961 - __main__ - INFO - 成功获取第 278/671 页，累计 2780 条
+2025-05-16 08:10:57,961 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=279&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:58,562 - __main__ - INFO - 成功获取第 279/671 页，累计 2790 条
+2025-05-16 08:10:58,563 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=280&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:59,152 - __main__ - INFO - 成功获取第 280/671 页，累计 2800 条
+2025-05-16 08:10:59,152 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=281&code=U4d0&codeValue=1747383051955
+2025-05-16 08:10:59,859 - __main__ - INFO - 成功获取第 281/671 页，累计 2810 条
+2025-05-16 08:10:59,859 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=282&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:02,161 - __main__ - INFO - 成功获取第 282/671 页，累计 2820 条
+2025-05-16 08:11:02,161 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=283&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:03,089 - __main__ - INFO - 成功获取第 283/671 页，累计 2830 条
+2025-05-16 08:11:03,089 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=284&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:03,766 - __main__ - INFO - 成功获取第 284/671 页，累计 2840 条
+2025-05-16 08:11:03,766 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=285&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:04,360 - __main__ - INFO - 成功获取第 285/671 页，累计 2850 条
+2025-05-16 08:11:04,360 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=286&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:04,983 - __main__ - INFO - 成功获取第 286/671 页，累计 2860 条
+2025-05-16 08:11:04,983 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=287&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:05,629 - __main__ - INFO - 成功获取第 287/671 页，累计 2870 条
+2025-05-16 08:11:05,629 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=288&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:06,226 - __main__ - INFO - 成功获取第 288/671 页，累计 2880 条
+2025-05-16 08:11:06,226 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=289&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:07,070 - __main__ - INFO - 成功获取第 289/671 页，累计 2890 条
+2025-05-16 08:11:07,070 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=290&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:07,710 - __main__ - INFO - 成功获取第 290/671 页，累计 2900 条
+2025-05-16 08:11:07,710 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=291&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:10,013 - __main__ - INFO - 成功获取第 291/671 页，累计 2910 条
+2025-05-16 08:11:10,013 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=292&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:10,620 - __main__ - INFO - 成功获取第 292/671 页，累计 2920 条
+2025-05-16 08:11:10,620 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=293&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:11,283 - __main__ - INFO - 成功获取第 293/671 页，累计 2930 条
+2025-05-16 08:11:11,283 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=294&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:13,792 - __main__ - INFO - 成功获取第 294/671 页，累计 2940 条
+2025-05-16 08:11:13,792 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=295&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:17,468 - __main__ - INFO - 成功获取第 295/671 页，累计 2950 条
+2025-05-16 08:11:17,469 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=296&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:18,172 - __main__ - INFO - 成功获取第 296/671 页，累计 2960 条
+2025-05-16 08:11:18,172 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=297&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:18,787 - __main__ - INFO - 成功获取第 297/671 页，累计 2970 条
+2025-05-16 08:11:18,787 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=298&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:19,395 - __main__ - INFO - 成功获取第 298/671 页，累计 2980 条
+2025-05-16 08:11:19,396 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=299&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:19,999 - __main__ - INFO - 成功获取第 299/671 页，累计 2990 条
+2025-05-16 08:11:19,999 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=300&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:20,627 - __main__ - INFO - 成功获取第 300/671 页，累计 3000 条
+2025-05-16 08:11:20,627 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=301&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:21,230 - __main__ - INFO - 成功获取第 301/671 页，累计 3010 条
+2025-05-16 08:11:21,230 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=302&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:21,844 - __main__ - INFO - 成功获取第 302/671 页，累计 3020 条
+2025-05-16 08:11:21,844 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=303&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:22,435 - __main__ - INFO - 成功获取第 303/671 页，累计 3030 条
+2025-05-16 08:11:22,436 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=304&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:23,037 - __main__ - INFO - 成功获取第 304/671 页，累计 3040 条
+2025-05-16 08:11:23,038 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=305&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:23,620 - __main__ - INFO - 成功获取第 305/671 页，累计 3050 条
+2025-05-16 08:11:23,620 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=306&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:24,241 - __main__ - INFO - 成功获取第 306/671 页，累计 3060 条
+2025-05-16 08:11:24,241 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=307&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:24,871 - __main__ - INFO - 成功获取第 307/671 页，累计 3070 条
+2025-05-16 08:11:24,871 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=308&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:25,602 - __main__ - INFO - 成功获取第 308/671 页，累计 3080 条
+2025-05-16 08:11:25,602 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=309&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:27,283 - __main__ - INFO - 成功获取第 309/671 页，累计 3090 条
+2025-05-16 08:11:27,283 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=310&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:28,927 - __main__ - INFO - 成功获取第 310/671 页，累计 3100 条
+2025-05-16 08:11:28,927 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=311&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:29,759 - __main__ - INFO - 成功获取第 311/671 页，累计 3110 条
+2025-05-16 08:11:29,759 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=312&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:30,424 - __main__ - INFO - 成功获取第 312/671 页，累计 3120 条
+2025-05-16 08:11:30,424 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=313&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:32,038 - __main__ - INFO - 成功获取第 313/671 页，累计 3130 条
+2025-05-16 08:11:32,038 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=314&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:32,746 - __main__ - INFO - 成功获取第 314/671 页，累计 3140 条
+2025-05-16 08:11:32,747 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=315&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:33,431 - __main__ - INFO - 成功获取第 315/671 页，累计 3150 条
+2025-05-16 08:11:33,431 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=316&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:34,036 - __main__ - INFO - 成功获取第 316/671 页，累计 3160 条
+2025-05-16 08:11:34,036 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=317&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:36,151 - __main__ - INFO - 成功获取第 317/671 页，累计 3170 条
+2025-05-16 08:11:36,151 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=318&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:36,807 - __main__ - INFO - 成功获取第 318/671 页，累计 3180 条
+2025-05-16 08:11:36,807 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=319&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:37,494 - __main__ - INFO - 成功获取第 319/671 页，累计 3190 条
+2025-05-16 08:11:37,494 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=320&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:38,177 - __main__ - INFO - 成功获取第 320/671 页，累计 3200 条
+2025-05-16 08:11:38,177 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=321&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:38,865 - __main__ - INFO - 成功获取第 321/671 页，累计 3210 条
+2025-05-16 08:11:38,865 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=322&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:39,515 - __main__ - INFO - 成功获取第 322/671 页，累计 3220 条
+2025-05-16 08:11:39,516 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=323&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:40,076 - __main__ - INFO - 成功获取第 323/671 页，累计 3230 条
+2025-05-16 08:11:40,076 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=324&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:40,725 - __main__ - INFO - 成功获取第 324/671 页，累计 3240 条
+2025-05-16 08:11:40,725 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=325&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:41,356 - __main__ - INFO - 成功获取第 325/671 页，累计 3250 条
+2025-05-16 08:11:41,356 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=326&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:42,015 - __main__ - INFO - 成功获取第 326/671 页，累计 3260 条
+2025-05-16 08:11:42,015 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=327&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:42,707 - __main__ - INFO - 成功获取第 327/671 页，累计 3270 条
+2025-05-16 08:11:42,707 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=328&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:43,416 - __main__ - INFO - 成功获取第 328/671 页，累计 3280 条
+2025-05-16 08:11:43,416 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=329&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:44,024 - __main__ - INFO - 成功获取第 329/671 页，累计 3290 条
+2025-05-16 08:11:44,024 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=330&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:45,810 - __main__ - INFO - 成功获取第 330/671 页，累计 3300 条
+2025-05-16 08:11:45,810 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=331&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:46,510 - __main__ - INFO - 成功获取第 331/671 页，累计 3310 条
+2025-05-16 08:11:46,510 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=332&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:47,137 - __main__ - INFO - 成功获取第 332/671 页，累计 3320 条
+2025-05-16 08:11:47,137 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=333&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:47,775 - __main__ - INFO - 成功获取第 333/671 页，累计 3330 条
+2025-05-16 08:11:47,775 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=334&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:48,558 - __main__ - INFO - 成功获取第 334/671 页，累计 3340 条
+2025-05-16 08:11:48,558 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=335&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:49,213 - __main__ - INFO - 成功获取第 335/671 页，累计 3350 条
+2025-05-16 08:11:49,213 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=336&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:49,868 - __main__ - INFO - 成功获取第 336/671 页，累计 3360 条
+2025-05-16 08:11:49,868 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=337&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:50,523 - __main__ - INFO - 成功获取第 337/671 页，累计 3370 条
+2025-05-16 08:11:50,523 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=338&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:51,158 - __main__ - INFO - 成功获取第 338/671 页，累计 3380 条
+2025-05-16 08:11:51,159 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=339&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:51,788 - __main__ - INFO - 成功获取第 339/671 页，累计 3390 条
+2025-05-16 08:11:51,788 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=340&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:52,474 - __main__ - INFO - 成功获取第 340/671 页，累计 3400 条
+2025-05-16 08:11:52,474 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=341&code=U4d0&codeValue=1747383051955
+2025-05-16 08:11:52,951 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:11:52,951 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:11:52,952 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:11:52,952 - __main__ - WARNING - 第 341 页第 1 次重试，错误: 空数据集
+2025-05-16 08:11:52,952 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383112952
+2025-05-16 08:11:53,402 - __main__ - INFO - 验证码刷新成功: cdvL****
+2025-05-16 08:11:53,402 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=341&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:55,532 - __main__ - INFO - 成功获取第 341/671 页，累计 3410 条
+2025-05-16 08:11:55,532 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=342&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:56,166 - __main__ - INFO - 成功获取第 342/671 页，累计 3420 条
+2025-05-16 08:11:56,166 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=343&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:56,805 - __main__ - INFO - 成功获取第 343/671 页，累计 3430 条
+2025-05-16 08:11:56,805 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=344&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:57,395 - __main__ - INFO - 成功获取第 344/671 页，累计 3440 条
+2025-05-16 08:11:57,395 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=345&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:58,053 - __main__ - INFO - 成功获取第 345/671 页，累计 3450 条
+2025-05-16 08:11:58,054 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=346&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:58,651 - __main__ - INFO - 成功获取第 346/671 页，累计 3460 条
+2025-05-16 08:11:58,651 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=347&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:59,215 - __main__ - INFO - 成功获取第 347/671 页，累计 3470 条
+2025-05-16 08:11:59,215 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=348&code=cdvL&codeValue=1747383112952
+2025-05-16 08:11:59,906 - __main__ - INFO - 成功获取第 348/671 页，累计 3480 条
+2025-05-16 08:11:59,906 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=349&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:00,498 - __main__ - INFO - 成功获取第 349/671 页，累计 3490 条
+2025-05-16 08:12:00,499 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=350&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:01,073 - __main__ - INFO - 成功获取第 350/671 页，累计 3500 条
+2025-05-16 08:12:01,073 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=351&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:01,801 - __main__ - INFO - 成功获取第 351/671 页，累计 3510 条
+2025-05-16 08:12:01,801 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=352&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:02,848 - __main__ - INFO - 成功获取第 352/671 页，累计 3520 条
+2025-05-16 08:12:02,848 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=353&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:03,573 - __main__ - INFO - 成功获取第 353/671 页，累计 3530 条
+2025-05-16 08:12:03,573 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=354&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:04,304 - __main__ - INFO - 成功获取第 354/671 页，累计 3540 条
+2025-05-16 08:12:04,304 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=355&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:04,964 - __main__ - INFO - 成功获取第 355/671 页，累计 3550 条
+2025-05-16 08:12:04,964 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=356&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:05,535 - __main__ - INFO - 成功获取第 356/671 页，累计 3560 条
+2025-05-16 08:12:05,536 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=357&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:06,196 - __main__ - INFO - 成功获取第 357/671 页，累计 3570 条
+2025-05-16 08:12:06,196 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=358&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:06,818 - __main__ - INFO - 成功获取第 358/671 页，累计 3580 条
+2025-05-16 08:12:06,818 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=359&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:07,465 - __main__ - INFO - 成功获取第 359/671 页，累计 3590 条
+2025-05-16 08:12:07,465 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=360&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:08,155 - __main__ - INFO - 成功获取第 360/671 页，累计 3600 条
+2025-05-16 08:12:08,156 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=361&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:08,807 - __main__ - INFO - 成功获取第 361/671 页，累计 3610 条
+2025-05-16 08:12:08,807 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=362&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:09,499 - __main__ - INFO - 成功获取第 362/671 页，累计 3620 条
+2025-05-16 08:12:09,499 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=363&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:10,138 - __main__ - INFO - 成功获取第 363/671 页，累计 3630 条
+2025-05-16 08:12:10,138 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=364&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:10,800 - __main__ - INFO - 成功获取第 364/671 页，累计 3640 条
+2025-05-16 08:12:10,800 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=365&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:11,464 - __main__ - INFO - 成功获取第 365/671 页，累计 3650 条
+2025-05-16 08:12:11,464 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=366&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:12,105 - __main__ - INFO - 成功获取第 366/671 页，累计 3660 条
+2025-05-16 08:12:12,105 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=367&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:12,798 - __main__ - INFO - 成功获取第 367/671 页，累计 3670 条
+2025-05-16 08:12:12,798 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=368&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:13,423 - __main__ - INFO - 成功获取第 368/671 页，累计 3680 条
+2025-05-16 08:12:13,423 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=369&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:13,997 - __main__ - INFO - 成功获取第 369/671 页，累计 3690 条
+2025-05-16 08:12:13,997 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=370&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:14,580 - __main__ - INFO - 成功获取第 370/671 页，累计 3700 条
+2025-05-16 08:12:14,580 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=371&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:15,219 - __main__ - INFO - 成功获取第 371/671 页，累计 3710 条
+2025-05-16 08:12:15,219 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=372&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:16,123 - __main__ - INFO - 成功获取第 372/671 页，累计 3720 条
+2025-05-16 08:12:16,123 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=373&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:16,718 - __main__ - INFO - 成功获取第 373/671 页，累计 3730 条
+2025-05-16 08:12:16,718 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=374&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:17,350 - __main__ - INFO - 成功获取第 374/671 页，累计 3740 条
+2025-05-16 08:12:17,351 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=375&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:17,972 - __main__ - INFO - 成功获取第 375/671 页，累计 3750 条
+2025-05-16 08:12:17,973 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=376&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:18,622 - __main__ - INFO - 成功获取第 376/671 页，累计 3760 条
+2025-05-16 08:12:18,622 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=377&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:19,236 - __main__ - INFO - 成功获取第 377/671 页，累计 3770 条
+2025-05-16 08:12:19,236 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=378&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:20,380 - __main__ - INFO - 成功获取第 378/671 页，累计 3780 条
+2025-05-16 08:12:20,380 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=379&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:21,031 - __main__ - INFO - 成功获取第 379/671 页，累计 3790 条
+2025-05-16 08:12:21,031 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=380&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:21,672 - __main__ - INFO - 成功获取第 380/671 页，累计 3800 条
+2025-05-16 08:12:21,672 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=381&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:22,339 - __main__ - INFO - 成功获取第 381/671 页，累计 3810 条
+2025-05-16 08:12:22,339 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=382&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:23,276 - __main__ - INFO - 成功获取第 382/671 页，累计 3820 条
+2025-05-16 08:12:23,276 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=383&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:24,151 - __main__ - INFO - 成功获取第 383/671 页，累计 3830 条
+2025-05-16 08:12:24,151 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=384&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:24,870 - __main__ - INFO - 成功获取第 384/671 页，累计 3840 条
+2025-05-16 08:12:24,871 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=385&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:25,538 - __main__ - INFO - 成功获取第 385/671 页，累计 3850 条
+2025-05-16 08:12:25,538 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=386&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:26,178 - __main__ - INFO - 成功获取第 386/671 页，累计 3860 条
+2025-05-16 08:12:26,178 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=387&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:26,836 - __main__ - INFO - 成功获取第 387/671 页，累计 3870 条
+2025-05-16 08:12:26,836 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=388&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:27,530 - __main__ - INFO - 成功获取第 388/671 页，累计 3880 条
+2025-05-16 08:12:27,531 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=389&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:28,430 - __main__ - INFO - 成功获取第 389/671 页，累计 3890 条
+2025-05-16 08:12:28,430 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=390&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:29,116 - __main__ - INFO - 成功获取第 390/671 页，累计 3900 条
+2025-05-16 08:12:29,117 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=391&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:29,792 - __main__ - INFO - 成功获取第 391/671 页，累计 3910 条
+2025-05-16 08:12:29,792 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=392&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:30,943 - __main__ - INFO - 成功获取第 392/671 页，累计 3920 条
+2025-05-16 08:12:30,943 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=393&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:31,642 - __main__ - INFO - 成功获取第 393/671 页，累计 3930 条
+2025-05-16 08:12:31,642 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=394&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:32,445 - __main__ - INFO - 成功获取第 394/671 页，累计 3940 条
+2025-05-16 08:12:32,445 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=395&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:33,169 - __main__ - INFO - 成功获取第 395/671 页，累计 3950 条
+2025-05-16 08:12:33,169 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=396&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:33,966 - __main__ - INFO - 成功获取第 396/671 页，累计 3960 条
+2025-05-16 08:12:33,967 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=397&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:36,075 - __main__ - INFO - 成功获取第 397/671 页，累计 3970 条
+2025-05-16 08:12:36,076 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=398&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:36,751 - __main__ - INFO - 成功获取第 398/671 页，累计 3980 条
+2025-05-16 08:12:36,751 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=399&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:37,391 - __main__ - INFO - 成功获取第 399/671 页，累计 3990 条
+2025-05-16 08:12:37,391 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=400&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:38,338 - __main__ - INFO - 成功获取第 400/671 页，累计 4000 条
+2025-05-16 08:12:38,338 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=401&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:38,963 - __main__ - INFO - 成功获取第 401/671 页，累计 4010 条
+2025-05-16 08:12:38,963 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=402&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:39,624 - __main__ - INFO - 成功获取第 402/671 页，累计 4020 条
+2025-05-16 08:12:39,624 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=403&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:41,838 - __main__ - INFO - 成功获取第 403/671 页，累计 4030 条
+2025-05-16 08:12:41,839 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=404&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:42,545 - __main__ - INFO - 成功获取第 404/671 页，累计 4040 条
+2025-05-16 08:12:42,545 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=405&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:43,177 - __main__ - INFO - 成功获取第 405/671 页，累计 4050 条
+2025-05-16 08:12:43,177 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=406&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:43,806 - __main__ - INFO - 成功获取第 406/671 页，累计 4060 条
+2025-05-16 08:12:43,806 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=407&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:44,497 - __main__ - INFO - 成功获取第 407/671 页，累计 4070 条
+2025-05-16 08:12:44,497 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=408&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:45,160 - __main__ - INFO - 成功获取第 408/671 页，累计 4080 条
+2025-05-16 08:12:45,161 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=409&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:46,184 - __main__ - INFO - 成功获取第 409/671 页，累计 4090 条
+2025-05-16 08:12:46,184 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=410&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:46,822 - __main__ - INFO - 成功获取第 410/671 页，累计 4100 条
+2025-05-16 08:12:46,822 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=411&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:47,725 - __main__ - INFO - 成功获取第 411/671 页，累计 4110 条
+2025-05-16 08:12:47,725 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=412&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:48,392 - __main__ - INFO - 成功获取第 412/671 页，累计 4120 条
+2025-05-16 08:12:48,392 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=413&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:49,027 - __main__ - INFO - 成功获取第 413/671 页，累计 4130 条
+2025-05-16 08:12:49,028 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=414&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:49,726 - __main__ - INFO - 成功获取第 414/671 页，累计 4140 条
+2025-05-16 08:12:49,726 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=415&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:50,751 - __main__ - INFO - 成功获取第 415/671 页，累计 4150 条
+2025-05-16 08:12:50,751 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=416&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:51,766 - __main__ - INFO - 成功获取第 416/671 页，累计 4160 条
+2025-05-16 08:12:51,766 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=417&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:52,388 - __main__ - INFO - 成功获取第 417/671 页，累计 4170 条
+2025-05-16 08:12:52,388 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=418&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:53,023 - __main__ - INFO - 成功获取第 418/671 页，累计 4180 条
+2025-05-16 08:12:53,023 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=419&code=cdvL&codeValue=1747383112952
+2025-05-16 08:12:53,412 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:12:53,412 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:12:53,412 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:12:53,412 - __main__ - WARNING - 第 419 页第 1 次重试，错误: 空数据集
+2025-05-16 08:12:53,412 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383173412
+2025-05-16 08:12:53,754 - __main__ - INFO - 验证码刷新成功: aHGN****
+2025-05-16 08:12:53,754 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=419&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:54,433 - __main__ - INFO - 成功获取第 419/671 页，累计 4190 条
+2025-05-16 08:12:54,433 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=420&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:55,036 - __main__ - INFO - 成功获取第 420/671 页，累计 4200 条
+2025-05-16 08:12:55,037 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=421&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:55,672 - __main__ - INFO - 成功获取第 421/671 页，累计 4210 条
+2025-05-16 08:12:55,672 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=422&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:56,243 - __main__ - INFO - 成功获取第 422/671 页，累计 4220 条
+2025-05-16 08:12:56,243 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=423&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:57,439 - __main__ - INFO - 成功获取第 423/671 页，累计 4230 条
+2025-05-16 08:12:57,439 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=424&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:58,188 - __main__ - INFO - 成功获取第 424/671 页，累计 4240 条
+2025-05-16 08:12:58,188 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=425&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:58,851 - __main__ - INFO - 成功获取第 425/671 页，累计 4250 条
+2025-05-16 08:12:58,851 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=426&code=aHGN&codeValue=1747383173412
+2025-05-16 08:12:59,492 - __main__ - INFO - 成功获取第 426/671 页，累计 4260 条
+2025-05-16 08:12:59,492 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=427&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:00,106 - __main__ - INFO - 成功获取第 427/671 页，累计 4270 条
+2025-05-16 08:13:00,106 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=428&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:00,790 - __main__ - INFO - 成功获取第 428/671 页，累计 4280 条
+2025-05-16 08:13:00,791 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=429&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:01,530 - __main__ - INFO - 成功获取第 429/671 页，累计 4290 条
+2025-05-16 08:13:01,530 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=430&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:02,191 - __main__ - INFO - 成功获取第 430/671 页，累计 4300 条
+2025-05-16 08:13:02,191 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=431&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:02,865 - __main__ - INFO - 成功获取第 431/671 页，累计 4310 条
+2025-05-16 08:13:02,865 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=432&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:03,607 - __main__ - INFO - 成功获取第 432/671 页，累计 4320 条
+2025-05-16 08:13:03,607 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=433&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:04,300 - __main__ - INFO - 成功获取第 433/671 页，累计 4330 条
+2025-05-16 08:13:04,300 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=434&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:04,961 - __main__ - INFO - 成功获取第 434/671 页，累计 4340 条
+2025-05-16 08:13:04,961 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=435&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:05,644 - __main__ - INFO - 成功获取第 435/671 页，累计 4350 条
+2025-05-16 08:13:05,644 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=436&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:06,295 - __main__ - INFO - 成功获取第 436/671 页，累计 4360 条
+2025-05-16 08:13:06,295 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=437&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:06,914 - __main__ - INFO - 成功获取第 437/671 页，累计 4370 条
+2025-05-16 08:13:06,914 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=438&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:07,566 - __main__ - INFO - 成功获取第 438/671 页，累计 4380 条
+2025-05-16 08:13:07,567 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=439&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:08,149 - __main__ - INFO - 成功获取第 439/671 页，累计 4390 条
+2025-05-16 08:13:08,149 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=440&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:08,744 - __main__ - INFO - 成功获取第 440/671 页，累计 4400 条
+2025-05-16 08:13:08,744 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=441&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:09,374 - __main__ - INFO - 成功获取第 441/671 页，累计 4410 条
+2025-05-16 08:13:09,374 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=442&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:10,322 - __main__ - INFO - 成功获取第 442/671 页，累计 4420 条
+2025-05-16 08:13:10,322 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=443&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:11,046 - __main__ - INFO - 成功获取第 443/671 页，累计 4430 条
+2025-05-16 08:13:11,046 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=444&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:11,705 - __main__ - INFO - 成功获取第 444/671 页，累计 4440 条
+2025-05-16 08:13:11,705 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=445&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:12,702 - __main__ - INFO - 成功获取第 445/671 页，累计 4450 条
+2025-05-16 08:13:12,703 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=446&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:13,346 - __main__ - INFO - 成功获取第 446/671 页，累计 4460 条
+2025-05-16 08:13:13,347 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=447&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:14,034 - __main__ - INFO - 成功获取第 447/671 页，累计 4470 条
+2025-05-16 08:13:14,034 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=448&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:14,701 - __main__ - INFO - 成功获取第 448/671 页，累计 4480 条
+2025-05-16 08:13:14,701 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=449&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:15,486 - __main__ - INFO - 成功获取第 449/671 页，累计 4490 条
+2025-05-16 08:13:15,486 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=450&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:16,168 - __main__ - INFO - 成功获取第 450/671 页，累计 4500 条
+2025-05-16 08:13:16,168 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=451&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:16,739 - __main__ - INFO - 成功获取第 451/671 页，累计 4510 条
+2025-05-16 08:13:16,739 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=452&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:17,401 - __main__ - INFO - 成功获取第 452/671 页，累计 4520 条
+2025-05-16 08:13:17,401 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=453&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:18,025 - __main__ - INFO - 成功获取第 453/671 页，累计 4530 条
+2025-05-16 08:13:18,025 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=454&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:18,699 - __main__ - INFO - 成功获取第 454/671 页，累计 4540 条
+2025-05-16 08:13:18,699 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=455&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:19,529 - __main__ - INFO - 成功获取第 455/671 页，累计 4550 条
+2025-05-16 08:13:19,529 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=456&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:20,164 - __main__ - INFO - 成功获取第 456/671 页，累计 4560 条
+2025-05-16 08:13:20,164 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=457&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:20,748 - __main__ - INFO - 成功获取第 457/671 页，累计 4570 条
+2025-05-16 08:13:20,748 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=458&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:21,445 - __main__ - INFO - 成功获取第 458/671 页，累计 4580 条
+2025-05-16 08:13:21,445 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=459&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:22,090 - __main__ - INFO - 成功获取第 459/671 页，累计 4590 条
+2025-05-16 08:13:22,090 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=460&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:22,736 - __main__ - INFO - 成功获取第 460/671 页，累计 4600 条
+2025-05-16 08:13:22,736 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=461&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:23,388 - __main__ - INFO - 成功获取第 461/671 页，累计 4610 条
+2025-05-16 08:13:23,388 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=462&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:24,054 - __main__ - INFO - 成功获取第 462/671 页，累计 4620 条
+2025-05-16 08:13:24,054 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=463&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:24,712 - __main__ - INFO - 成功获取第 463/671 页，累计 4630 条
+2025-05-16 08:13:24,712 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=464&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:25,318 - __main__ - INFO - 成功获取第 464/671 页，累计 4640 条
+2025-05-16 08:13:25,319 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=465&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:25,936 - __main__ - INFO - 成功获取第 465/671 页，累计 4650 条
+2025-05-16 08:13:25,936 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=466&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:26,622 - __main__ - INFO - 成功获取第 466/671 页，累计 4660 条
+2025-05-16 08:13:26,622 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=467&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:27,276 - __main__ - INFO - 成功获取第 467/671 页，累计 4670 条
+2025-05-16 08:13:27,277 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=468&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:29,221 - __main__ - INFO - 成功获取第 468/671 页，累计 4680 条
+2025-05-16 08:13:29,221 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=469&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:29,836 - __main__ - INFO - 成功获取第 469/671 页，累计 4690 条
+2025-05-16 08:13:29,836 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=470&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:30,439 - __main__ - INFO - 成功获取第 470/671 页，累计 4700 条
+2025-05-16 08:13:30,440 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=471&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:30,995 - __main__ - INFO - 成功获取第 471/671 页，累计 4710 条
+2025-05-16 08:13:30,995 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=472&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:31,655 - __main__ - INFO - 成功获取第 472/671 页，累计 4720 条
+2025-05-16 08:13:31,655 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=473&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:32,325 - __main__ - INFO - 成功获取第 473/671 页，累计 4730 条
+2025-05-16 08:13:32,325 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=474&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:32,920 - __main__ - INFO - 成功获取第 474/671 页，累计 4740 条
+2025-05-16 08:13:32,920 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=475&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:33,900 - __main__ - INFO - 成功获取第 475/671 页，累计 4750 条
+2025-05-16 08:13:33,900 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=476&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:34,474 - __main__ - INFO - 成功获取第 476/671 页，累计 4760 条
+2025-05-16 08:13:34,474 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=477&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:35,078 - __main__ - INFO - 成功获取第 477/671 页，累计 4770 条
+2025-05-16 08:13:35,078 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=478&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:35,667 - __main__ - INFO - 成功获取第 478/671 页，累计 4780 条
+2025-05-16 08:13:35,667 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=479&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:36,319 - __main__ - INFO - 成功获取第 479/671 页，累计 4790 条
+2025-05-16 08:13:36,319 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=480&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:36,975 - __main__ - INFO - 成功获取第 480/671 页，累计 4800 条
+2025-05-16 08:13:36,975 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=481&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:37,600 - __main__ - INFO - 成功获取第 481/671 页，累计 4810 条
+2025-05-16 08:13:37,601 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=482&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:38,255 - __main__ - INFO - 成功获取第 482/671 页，累计 4820 条
+2025-05-16 08:13:38,255 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=483&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:38,843 - __main__ - INFO - 成功获取第 483/671 页，累计 4830 条
+2025-05-16 08:13:38,843 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=484&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:39,531 - __main__ - INFO - 成功获取第 484/671 页，累计 4840 条
+2025-05-16 08:13:39,531 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=485&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:40,358 - __main__ - INFO - 成功获取第 485/671 页，累计 4850 条
+2025-05-16 08:13:40,358 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=486&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:41,393 - __main__ - INFO - 成功获取第 486/671 页，累计 4860 条
+2025-05-16 08:13:41,393 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=487&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:42,028 - __main__ - INFO - 成功获取第 487/671 页，累计 4870 条
+2025-05-16 08:13:42,028 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=488&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:42,725 - __main__ - INFO - 成功获取第 488/671 页，累计 4880 条
+2025-05-16 08:13:42,725 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=489&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:43,311 - __main__ - INFO - 成功获取第 489/671 页，累计 4890 条
+2025-05-16 08:13:43,311 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=490&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:44,006 - __main__ - INFO - 成功获取第 490/671 页，累计 4900 条
+2025-05-16 08:13:44,006 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=491&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:44,659 - __main__ - INFO - 成功获取第 491/671 页，累计 4910 条
+2025-05-16 08:13:44,659 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=492&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:45,268 - __main__ - INFO - 成功获取第 492/671 页，累计 4920 条
+2025-05-16 08:13:45,269 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=493&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:46,163 - __main__ - INFO - 成功获取第 493/671 页，累计 4930 条
+2025-05-16 08:13:46,163 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=494&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:46,763 - __main__ - INFO - 成功获取第 494/671 页，累计 4940 条
+2025-05-16 08:13:46,763 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=495&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:47,397 - __main__ - INFO - 成功获取第 495/671 页，累计 4950 条
+2025-05-16 08:13:47,397 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=496&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:48,275 - __main__ - INFO - 成功获取第 496/671 页，累计 4960 条
+2025-05-16 08:13:48,275 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=497&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:48,909 - __main__ - INFO - 成功获取第 497/671 页，累计 4970 条
+2025-05-16 08:13:48,909 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=498&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:49,520 - __main__ - INFO - 成功获取第 498/671 页，累计 4980 条
+2025-05-16 08:13:49,520 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=499&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:50,197 - __main__ - INFO - 成功获取第 499/671 页，累计 4990 条
+2025-05-16 08:13:50,197 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=500&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:50,801 - __main__ - INFO - 成功获取第 500/671 页，累计 5000 条
+2025-05-16 08:13:50,801 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=501&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:51,404 - __main__ - INFO - 成功获取第 501/671 页，累计 5010 条
+2025-05-16 08:13:51,404 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=502&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:52,041 - __main__ - INFO - 成功获取第 502/671 页，累计 5020 条
+2025-05-16 08:13:52,041 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=503&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:52,650 - __main__ - INFO - 成功获取第 503/671 页，累计 5030 条
+2025-05-16 08:13:52,650 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=504&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:53,291 - __main__ - INFO - 成功获取第 504/671 页，累计 5040 条
+2025-05-16 08:13:53,291 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=505&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:53,988 - __main__ - INFO - 成功获取第 505/671 页，累计 5050 条
+2025-05-16 08:13:53,989 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=506&code=aHGN&codeValue=1747383173412
+2025-05-16 08:13:54,360 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:13:54,361 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:13:54,361 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:13:54,361 - __main__ - WARNING - 第 506 页第 1 次重试，错误: 空数据集
+2025-05-16 08:13:54,361 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383234361
+2025-05-16 08:13:54,751 - __main__ - INFO - 验证码刷新成功: 8mjK****
+2025-05-16 08:13:54,751 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=506&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:55,408 - __main__ - INFO - 成功获取第 506/671 页，累计 5060 条
+2025-05-16 08:13:55,408 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=507&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:55,975 - __main__ - INFO - 成功获取第 507/671 页，累计 5070 条
+2025-05-16 08:13:55,975 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=508&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:56,623 - __main__ - INFO - 成功获取第 508/671 页，累计 5080 条
+2025-05-16 08:13:56,623 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=509&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:57,241 - __main__ - INFO - 成功获取第 509/671 页，累计 5090 条
+2025-05-16 08:13:57,241 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=510&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:57,852 - __main__ - INFO - 成功获取第 510/671 页，累计 5100 条
+2025-05-16 08:13:57,852 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=511&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:58,797 - __main__ - INFO - 成功获取第 511/671 页，累计 5110 条
+2025-05-16 08:13:58,797 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=512&code=8mjK&codeValue=1747383234361
+2025-05-16 08:13:59,423 - __main__ - INFO - 成功获取第 512/671 页，累计 5120 条
+2025-05-16 08:13:59,423 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=513&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:00,011 - __main__ - INFO - 成功获取第 513/671 页，累计 5130 条
+2025-05-16 08:14:00,011 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=514&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:00,604 - __main__ - INFO - 成功获取第 514/671 页，累计 5140 条
+2025-05-16 08:14:00,604 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=515&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:01,241 - __main__ - INFO - 成功获取第 515/671 页，累计 5150 条
+2025-05-16 08:14:01,241 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=516&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:01,876 - __main__ - INFO - 成功获取第 516/671 页，累计 5160 条
+2025-05-16 08:14:01,876 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=517&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:02,455 - __main__ - INFO - 成功获取第 517/671 页，累计 5170 条
+2025-05-16 08:14:02,455 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=518&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:03,055 - __main__ - INFO - 成功获取第 518/671 页，累计 5180 条
+2025-05-16 08:14:03,055 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=519&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:03,698 - __main__ - INFO - 成功获取第 519/671 页，累计 5190 条
+2025-05-16 08:14:03,699 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=520&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:04,369 - __main__ - INFO - 成功获取第 520/671 页，累计 5200 条
+2025-05-16 08:14:04,369 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=521&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:04,927 - __main__ - INFO - 成功获取第 521/671 页，累计 5210 条
+2025-05-16 08:14:04,927 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=522&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:05,520 - __main__ - INFO - 成功获取第 522/671 页，累计 5220 条
+2025-05-16 08:14:05,520 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=523&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:06,122 - __main__ - INFO - 成功获取第 523/671 页，累计 5230 条
+2025-05-16 08:14:06,122 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=524&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:06,742 - __main__ - INFO - 成功获取第 524/671 页，累计 5240 条
+2025-05-16 08:14:06,742 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=525&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:07,421 - __main__ - INFO - 成功获取第 525/671 页，累计 5250 条
+2025-05-16 08:14:07,421 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=526&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:08,065 - __main__ - INFO - 成功获取第 526/671 页，累计 5260 条
+2025-05-16 08:14:08,065 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=527&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:08,680 - __main__ - INFO - 成功获取第 527/671 页，累计 5270 条
+2025-05-16 08:14:08,680 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=528&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:09,262 - __main__ - INFO - 成功获取第 528/671 页，累计 5280 条
+2025-05-16 08:14:09,262 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=529&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:09,921 - __main__ - INFO - 成功获取第 529/671 页，累计 5290 条
+2025-05-16 08:14:09,922 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=530&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:10,531 - __main__ - INFO - 成功获取第 530/671 页，累计 5300 条
+2025-05-16 08:14:10,531 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=531&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:11,158 - __main__ - INFO - 成功获取第 531/671 页，累计 5310 条
+2025-05-16 08:14:11,158 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=532&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:11,839 - __main__ - INFO - 成功获取第 532/671 页，累计 5320 条
+2025-05-16 08:14:11,840 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=533&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:12,464 - __main__ - INFO - 成功获取第 533/671 页，累计 5330 条
+2025-05-16 08:14:12,465 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=534&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:13,068 - __main__ - INFO - 成功获取第 534/671 页，累计 5340 条
+2025-05-16 08:14:13,069 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=535&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:13,682 - __main__ - INFO - 成功获取第 535/671 页，累计 5350 条
+2025-05-16 08:14:13,683 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=536&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:14,252 - __main__ - INFO - 成功获取第 536/671 页，累计 5360 条
+2025-05-16 08:14:14,252 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=537&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:14,906 - __main__ - INFO - 成功获取第 537/671 页，累计 5370 条
+2025-05-16 08:14:14,906 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=538&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:15,517 - __main__ - INFO - 成功获取第 538/671 页，累计 5380 条
+2025-05-16 08:14:15,518 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=539&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:16,158 - __main__ - INFO - 成功获取第 539/671 页，累计 5390 条
+2025-05-16 08:14:16,158 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=540&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:16,800 - __main__ - INFO - 成功获取第 540/671 页，累计 5400 条
+2025-05-16 08:14:16,800 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=541&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:17,464 - __main__ - INFO - 成功获取第 541/671 页，累计 5410 条
+2025-05-16 08:14:17,464 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=542&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:18,070 - __main__ - INFO - 成功获取第 542/671 页，累计 5420 条
+2025-05-16 08:14:18,070 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=543&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:18,676 - __main__ - INFO - 成功获取第 543/671 页，累计 5430 条
+2025-05-16 08:14:18,676 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=544&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:19,445 - __main__ - INFO - 成功获取第 544/671 页，累计 5440 条
+2025-05-16 08:14:19,445 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=545&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:20,040 - __main__ - INFO - 成功获取第 545/671 页，累计 5450 条
+2025-05-16 08:14:20,040 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=546&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:20,670 - __main__ - INFO - 成功获取第 546/671 页，累计 5460 条
+2025-05-16 08:14:20,670 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=547&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:21,282 - __main__ - INFO - 成功获取第 547/671 页，累计 5470 条
+2025-05-16 08:14:21,282 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=548&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:21,888 - __main__ - INFO - 成功获取第 548/671 页，累计 5480 条
+2025-05-16 08:14:21,888 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=549&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:22,493 - __main__ - INFO - 成功获取第 549/671 页，累计 5490 条
+2025-05-16 08:14:22,494 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=550&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:23,088 - __main__ - INFO - 成功获取第 550/671 页，累计 5500 条
+2025-05-16 08:14:23,088 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=551&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:23,728 - __main__ - INFO - 成功获取第 551/671 页，累计 5510 条
+2025-05-16 08:14:23,728 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=552&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:24,319 - __main__ - INFO - 成功获取第 552/671 页，累计 5520 条
+2025-05-16 08:14:24,319 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=553&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:24,933 - __main__ - INFO - 成功获取第 553/671 页，累计 5530 条
+2025-05-16 08:14:24,934 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=554&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:25,532 - __main__ - INFO - 成功获取第 554/671 页，累计 5540 条
+2025-05-16 08:14:25,532 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=555&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:26,188 - __main__ - INFO - 成功获取第 555/671 页，累计 5550 条
+2025-05-16 08:14:26,188 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=556&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:27,093 - __main__ - INFO - 成功获取第 556/671 页，累计 5560 条
+2025-05-16 08:14:27,093 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=557&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:27,684 - __main__ - INFO - 成功获取第 557/671 页，累计 5570 条
+2025-05-16 08:14:27,684 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=558&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:28,350 - __main__ - INFO - 成功获取第 558/671 页，累计 5580 条
+2025-05-16 08:14:28,351 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=559&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:28,995 - __main__ - INFO - 成功获取第 559/671 页，累计 5590 条
+2025-05-16 08:14:28,995 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=560&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:29,641 - __main__ - INFO - 成功获取第 560/671 页，累计 5600 条
+2025-05-16 08:14:29,641 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=561&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:30,231 - __main__ - INFO - 成功获取第 561/671 页，累计 5610 条
+2025-05-16 08:14:30,231 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=562&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:30,919 - __main__ - INFO - 成功获取第 562/671 页，累计 5620 条
+2025-05-16 08:14:30,920 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=563&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:31,487 - __main__ - INFO - 成功获取第 563/671 页，累计 5630 条
+2025-05-16 08:14:31,487 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=564&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:32,201 - __main__ - INFO - 成功获取第 564/671 页，累计 5640 条
+2025-05-16 08:14:32,201 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=565&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:32,868 - __main__ - INFO - 成功获取第 565/671 页，累计 5650 条
+2025-05-16 08:14:32,868 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=566&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:33,570 - __main__ - INFO - 成功获取第 566/671 页，累计 5660 条
+2025-05-16 08:14:33,570 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=567&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:34,189 - __main__ - INFO - 成功获取第 567/671 页，累计 5670 条
+2025-05-16 08:14:34,189 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=568&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:34,806 - __main__ - INFO - 成功获取第 568/671 页，累计 5680 条
+2025-05-16 08:14:34,806 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=569&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:35,413 - __main__ - INFO - 成功获取第 569/671 页，累计 5690 条
+2025-05-16 08:14:35,413 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=570&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:36,420 - __main__ - INFO - 成功获取第 570/671 页，累计 5700 条
+2025-05-16 08:14:36,420 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=571&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:37,143 - __main__ - INFO - 成功获取第 571/671 页，累计 5710 条
+2025-05-16 08:14:37,143 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=572&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:37,764 - __main__ - INFO - 成功获取第 572/671 页，累计 5720 条
+2025-05-16 08:14:37,764 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=573&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:38,474 - __main__ - INFO - 成功获取第 573/671 页，累计 5730 条
+2025-05-16 08:14:38,474 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=574&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:39,115 - __main__ - INFO - 成功获取第 574/671 页，累计 5740 条
+2025-05-16 08:14:39,115 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=575&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:39,735 - __main__ - INFO - 成功获取第 575/671 页，累计 5750 条
+2025-05-16 08:14:39,735 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=576&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:40,391 - __main__ - INFO - 成功获取第 576/671 页，累计 5760 条
+2025-05-16 08:14:40,391 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=577&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:41,034 - __main__ - INFO - 成功获取第 577/671 页，累计 5770 条
+2025-05-16 08:14:41,034 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=578&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:41,639 - __main__ - INFO - 成功获取第 578/671 页，累计 5780 条
+2025-05-16 08:14:41,639 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=579&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:42,282 - __main__ - INFO - 成功获取第 579/671 页，累计 5790 条
+2025-05-16 08:14:42,282 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=580&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:42,986 - __main__ - INFO - 成功获取第 580/671 页，累计 5800 条
+2025-05-16 08:14:42,986 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=581&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:43,644 - __main__ - INFO - 成功获取第 581/671 页，累计 5810 条
+2025-05-16 08:14:43,644 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=582&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:44,273 - __main__ - INFO - 成功获取第 582/671 页，累计 5820 条
+2025-05-16 08:14:44,273 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=583&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:44,879 - __main__ - INFO - 成功获取第 583/671 页，累计 5830 条
+2025-05-16 08:14:44,879 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=584&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:45,526 - __main__ - INFO - 成功获取第 584/671 页，累计 5840 条
+2025-05-16 08:14:45,527 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=585&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:46,209 - __main__ - INFO - 成功获取第 585/671 页，累计 5850 条
+2025-05-16 08:14:46,209 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=586&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:46,873 - __main__ - INFO - 成功获取第 586/671 页，累计 5860 条
+2025-05-16 08:14:46,874 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=587&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:47,547 - __main__ - INFO - 成功获取第 587/671 页，累计 5870 条
+2025-05-16 08:14:47,548 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=588&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:48,148 - __main__ - INFO - 成功获取第 588/671 页，累计 5880 条
+2025-05-16 08:14:48,148 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=589&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:48,748 - __main__ - INFO - 成功获取第 589/671 页，累计 5890 条
+2025-05-16 08:14:48,748 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=590&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:49,381 - __main__ - INFO - 成功获取第 590/671 页，累计 5900 条
+2025-05-16 08:14:49,381 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=591&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:50,008 - __main__ - INFO - 成功获取第 591/671 页，累计 5910 条
+2025-05-16 08:14:50,008 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=592&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:50,640 - __main__ - INFO - 成功获取第 592/671 页，累计 5920 条
+2025-05-16 08:14:50,640 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=593&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:51,238 - __main__ - INFO - 成功获取第 593/671 页，累计 5930 条
+2025-05-16 08:14:51,238 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=594&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:51,921 - __main__ - INFO - 成功获取第 594/671 页，累计 5940 条
+2025-05-16 08:14:51,921 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=595&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:52,598 - __main__ - INFO - 成功获取第 595/671 页，累计 5950 条
+2025-05-16 08:14:52,598 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=596&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:53,199 - __main__ - INFO - 成功获取第 596/671 页，累计 5960 条
+2025-05-16 08:14:53,199 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=597&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:53,838 - __main__ - INFO - 成功获取第 597/671 页，累计 5970 条
+2025-05-16 08:14:53,838 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=598&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:54,558 - __main__ - INFO - 成功获取第 598/671 页，累计 5980 条
+2025-05-16 08:14:54,558 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=599&code=8mjK&codeValue=1747383234361
+2025-05-16 08:14:54,939 - __main__ - ERROR - 服务器返回空数据，可能原因：
+2025-05-16 08:14:54,940 - __main__ - ERROR - 1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制
+2025-05-16 08:14:54,940 - __main__ - ERROR - 原始响应码: 1 信息: 验证码已过期,无法查询
+2025-05-16 08:14:54,940 - __main__ - WARNING - 第 599 页第 1 次重试，错误: 空数据集
+2025-05-16 08:14:54,940 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383294940
+2025-05-16 08:14:55,321 - __main__ - INFO - 验证码刷新成功: VMjR****
+2025-05-16 08:14:55,321 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=599&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:56,018 - __main__ - INFO - 成功获取第 599/671 页，累计 5990 条
+2025-05-16 08:14:56,018 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=600&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:56,625 - __main__ - INFO - 成功获取第 600/671 页，累计 6000 条
+2025-05-16 08:14:56,625 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=601&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:57,252 - __main__ - INFO - 成功获取第 601/671 页，累计 6010 条
+2025-05-16 08:14:57,252 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=602&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:57,906 - __main__ - INFO - 成功获取第 602/671 页，累计 6020 条
+2025-05-16 08:14:57,906 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=603&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:58,597 - __main__ - INFO - 成功获取第 603/671 页，累计 6030 条
+2025-05-16 08:14:58,597 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=604&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:59,273 - __main__ - INFO - 成功获取第 604/671 页，累计 6040 条
+2025-05-16 08:14:59,273 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=605&code=VMjR&codeValue=1747383294940
+2025-05-16 08:14:59,931 - __main__ - INFO - 成功获取第 605/671 页，累计 6050 条
+2025-05-16 08:14:59,931 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=606&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:00,570 - __main__ - INFO - 成功获取第 606/671 页，累计 6060 条
+2025-05-16 08:15:00,570 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=607&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:01,587 - __main__ - INFO - 成功获取第 607/671 页，累计 6070 条
+2025-05-16 08:15:01,587 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=608&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:02,226 - __main__ - INFO - 成功获取第 608/671 页，累计 6080 条
+2025-05-16 08:15:02,227 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=609&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:02,886 - __main__ - INFO - 成功获取第 609/671 页，累计 6090 条
+2025-05-16 08:15:02,886 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=610&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:04,005 - __main__ - INFO - 成功获取第 610/671 页，累计 6100 条
+2025-05-16 08:15:04,006 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=611&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:04,690 - __main__ - INFO - 成功获取第 611/671 页，累计 6110 条
+2025-05-16 08:15:04,690 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=612&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:05,343 - __main__ - INFO - 成功获取第 612/671 页，累计 6120 条
+2025-05-16 08:15:05,343 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=613&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:05,956 - __main__ - INFO - 成功获取第 613/671 页，累计 6130 条
+2025-05-16 08:15:05,957 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=614&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:06,666 - __main__ - INFO - 成功获取第 614/671 页，累计 6140 条
+2025-05-16 08:15:06,666 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=615&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:07,296 - __main__ - INFO - 成功获取第 615/671 页，累计 6150 条
+2025-05-16 08:15:07,296 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=616&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:07,925 - __main__ - INFO - 成功获取第 616/671 页，累计 6160 条
+2025-05-16 08:15:07,925 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=617&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:08,619 - __main__ - INFO - 成功获取第 617/671 页，累计 6170 条
+2025-05-16 08:15:08,619 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=618&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:09,335 - __main__ - INFO - 成功获取第 618/671 页，累计 6180 条
+2025-05-16 08:15:09,335 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=619&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:10,041 - __main__ - INFO - 成功获取第 619/671 页，累计 6190 条
+2025-05-16 08:15:10,041 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=620&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:10,715 - __main__ - INFO - 成功获取第 620/671 页，累计 6200 条
+2025-05-16 08:15:10,716 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=621&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:11,333 - __main__ - INFO - 成功获取第 621/671 页，累计 6210 条
+2025-05-16 08:15:11,333 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=622&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:11,955 - __main__ - INFO - 成功获取第 622/671 页，累计 6220 条
+2025-05-16 08:15:11,955 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=623&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:12,568 - __main__ - INFO - 成功获取第 623/671 页，累计 6230 条
+2025-05-16 08:15:12,568 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=624&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:13,215 - __main__ - INFO - 成功获取第 624/671 页，累计 6240 条
+2025-05-16 08:15:13,215 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=625&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:13,867 - __main__ - INFO - 成功获取第 625/671 页，累计 6250 条
+2025-05-16 08:15:13,867 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=626&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:14,563 - __main__ - INFO - 成功获取第 626/671 页，累计 6260 条
+2025-05-16 08:15:14,563 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=627&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:15,210 - __main__ - INFO - 成功获取第 627/671 页，累计 6270 条
+2025-05-16 08:15:15,210 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=628&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:15,946 - __main__ - INFO - 成功获取第 628/671 页，累计 6280 条
+2025-05-16 08:15:15,946 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=629&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:16,608 - __main__ - INFO - 成功获取第 629/671 页，累计 6290 条
+2025-05-16 08:15:16,608 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=630&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:17,243 - __main__ - INFO - 成功获取第 630/671 页，累计 6300 条
+2025-05-16 08:15:17,243 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=631&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:17,856 - __main__ - INFO - 成功获取第 631/671 页，累计 6310 条
+2025-05-16 08:15:17,856 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=632&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:18,729 - __main__ - INFO - 成功获取第 632/671 页，累计 6320 条
+2025-05-16 08:15:18,729 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=633&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:19,404 - __main__ - INFO - 成功获取第 633/671 页，累计 6330 条
+2025-05-16 08:15:19,404 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=634&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:20,159 - __main__ - INFO - 成功获取第 634/671 页，累计 6340 条
+2025-05-16 08:15:20,159 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=635&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:20,749 - __main__ - INFO - 成功获取第 635/671 页，累计 6350 条
+2025-05-16 08:15:20,749 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=636&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:21,375 - __main__ - INFO - 成功获取第 636/671 页，累计 6360 条
+2025-05-16 08:15:21,376 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=637&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:22,034 - __main__ - INFO - 成功获取第 637/671 页，累计 6370 条
+2025-05-16 08:15:22,034 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=638&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:22,690 - __main__ - INFO - 成功获取第 638/671 页，累计 6380 条
+2025-05-16 08:15:22,691 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=639&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:25,094 - __main__ - INFO - 成功获取第 639/671 页，累计 6390 条
+2025-05-16 08:15:25,095 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=640&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:25,710 - __main__ - INFO - 成功获取第 640/671 页，累计 6400 条
+2025-05-16 08:15:25,711 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=641&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:26,539 - __main__ - INFO - 成功获取第 641/671 页，累计 6410 条
+2025-05-16 08:15:26,539 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=642&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:27,234 - __main__ - INFO - 成功获取第 642/671 页，累计 6420 条
+2025-05-16 08:15:27,235 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=643&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:27,831 - __main__ - INFO - 成功获取第 643/671 页，累计 6430 条
+2025-05-16 08:15:27,831 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=644&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:28,453 - __main__ - INFO - 成功获取第 644/671 页，累计 6440 条
+2025-05-16 08:15:28,453 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=645&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:29,090 - __main__ - INFO - 成功获取第 645/671 页，累计 6450 条
+2025-05-16 08:15:29,090 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=646&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:29,795 - __main__ - INFO - 成功获取第 646/671 页，累计 6460 条
+2025-05-16 08:15:29,795 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=647&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:30,538 - __main__ - INFO - 成功获取第 647/671 页，累计 6470 条
+2025-05-16 08:15:30,538 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=648&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:31,187 - __main__ - INFO - 成功获取第 648/671 页，累计 6480 条
+2025-05-16 08:15:31,187 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=649&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:31,856 - __main__ - INFO - 成功获取第 649/671 页，累计 6490 条
+2025-05-16 08:15:31,856 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=650&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:32,579 - __main__ - INFO - 成功获取第 650/671 页，累计 6500 条
+2025-05-16 08:15:32,579 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=651&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:33,207 - __main__ - INFO - 成功获取第 651/671 页，累计 6510 条
+2025-05-16 08:15:33,207 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=652&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:33,895 - __main__ - INFO - 成功获取第 652/671 页，累计 6520 条
+2025-05-16 08:15:33,895 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=653&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:34,638 - __main__ - INFO - 成功获取第 653/671 页，累计 6530 条
+2025-05-16 08:15:34,638 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=654&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:35,253 - __main__ - INFO - 成功获取第 654/671 页，累计 6540 条
+2025-05-16 08:15:35,254 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=655&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:35,897 - __main__ - INFO - 成功获取第 655/671 页，累计 6550 条
+2025-05-16 08:15:35,897 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=656&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:36,543 - __main__ - INFO - 成功获取第 656/671 页，累计 6560 条
+2025-05-16 08:15:36,544 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=657&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:37,527 - __main__ - INFO - 成功获取第 657/671 页，累计 6570 条
+2025-05-16 08:15:37,527 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=658&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:38,189 - __main__ - INFO - 成功获取第 658/671 页，累计 6580 条
+2025-05-16 08:15:38,189 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=659&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:38,958 - __main__ - INFO - 成功获取第 659/671 页，累计 6590 条
+2025-05-16 08:15:38,959 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=660&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:39,603 - __main__ - INFO - 成功获取第 660/671 页，累计 6600 条
+2025-05-16 08:15:39,604 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=661&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:40,228 - __main__ - INFO - 成功获取第 661/671 页，累计 6610 条
+2025-05-16 08:15:40,228 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=662&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:40,803 - __main__ - INFO - 成功获取第 662/671 页，累计 6620 条
+2025-05-16 08:15:40,803 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=663&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:41,434 - __main__ - INFO - 成功获取第 663/671 页，累计 6630 条
+2025-05-16 08:15:41,434 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=664&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:42,068 - __main__ - INFO - 成功获取第 664/671 页，累计 6640 条
+2025-05-16 08:15:42,068 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=665&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:42,706 - __main__ - INFO - 成功获取第 665/671 页，累计 6650 条
+2025-05-16 08:15:42,706 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=666&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:43,360 - __main__ - INFO - 成功获取第 666/671 页，累计 6660 条
+2025-05-16 08:15:43,360 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=667&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:43,968 - __main__ - INFO - 成功获取第 667/671 页，累计 6670 条
+2025-05-16 08:15:43,968 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=668&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:44,553 - __main__ - INFO - 成功获取第 668/671 页，累计 6680 条
+2025-05-16 08:15:44,553 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=669&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:45,262 - __main__ - INFO - 成功获取第 669/671 页，累计 6690 条
+2025-05-16 08:15:45,262 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=670&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:45,854 - __main__ - INFO - 成功获取第 670/671 页，累计 6697 条
+2025-05-16 08:15:45,854 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=671&code=VMjR&codeValue=1747383294940
+2025-05-16 08:15:46,420 - __main__ - WARNING - 第 671 页第 1 次重试，错误: 空数据集
+2025-05-16 08:15:46,420 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383346420
+2025-05-16 08:15:46,781 - __main__ - INFO - 验证码刷新成功: 1WCW****
+2025-05-16 08:15:46,781 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage?pageSize=10&cioName=%E5%85%AC%E5%8F%B8&page=671&code=1WCW&codeValue=1747383346420
+2025-05-16 08:15:47,371 - __main__ - WARNING - 第 671 页第 2 次重试，错误: 空数据集
+2025-05-16 08:15:47,371 - __main__ - INFO - 请求尝试 1/3 -> http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=1747383347371
+2025-05-16 08:15:47,787 - __main__ - INFO - 验证码刷新成功: XS75****
+2025-05-16 08:15:47,787 - __main__ - ERROR - 跳过第 671 页，连续失败 2 次
+2025-05-16 08:15:56,615 - __main__ - INFO - 报表生成成功: /home/runner/work/YCxyf/YCxyf/excel_output/宜昌市信用评价信息_20250516_081547.xlsx
+2025-05-16 08:15:56,619 - __main__ - INFO - === 爬虫结束 ===
