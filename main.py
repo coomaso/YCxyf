@@ -100,7 +100,7 @@ class CryptoUtils:
     
         try:
             encrypted_bytes = base64.b64decode(encrypted_base64)
-            cipher = AES.new(AES_KEY, AES.MODE_CBC, AES_IV)
+            cipher = AES.new(Config.AES_KEY, AES.MODE_CBC, Config.AES_IV)
             decrypted_bytes = cipher.decrypt(encrypted_bytes)
             unpadded_bytes = unpad(decrypted_bytes, AES.block_size)
             return unpadded_bytes.decode("utf-8")
