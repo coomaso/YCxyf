@@ -17,7 +17,6 @@ import sys
 import requests
 import json
 from Crypto.Cipher import AES
-from Crypto.Util.Padding import unpad
 import base64
 import time
 from urllib.parse import quote
@@ -102,8 +101,7 @@ class CryptoUtils:
             encrypted_bytes = base64.b64decode(encrypted_base64)
             cipher = AES.new(Config.AES_KEY, AES.MODE_CBC, Config.AES_IV)
             decrypted_bytes = cipher.decrypt(encrypted_bytes)
-            unpadded_bytes = unpad(decrypted_bytes, AES.block_size)
-            return unpadded_bytes.decode("utf-8")
+            return decrypted_bytes.rstrip(b'\x00').decode("utf-8")
 
         except (ValueError, TypeError) as e:
             logger.error(f"解密参数错误: {str(e)}")
