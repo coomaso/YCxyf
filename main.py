@@ -322,16 +322,27 @@ class CreditCrawler:
             logger.info("=== 爬虫结束 ===")
 
     def _refresh_captcha(self):
-        """刷新验证码"""
-        url = f"http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue={int(time.time()*1000)}"
-        response = NetworkUtils.safe_request(self.session, url).json()
-        
-        if response.get("code") != 0:
-            raise RuntimeError(f"验证码接口异常: {response}")
+        """优化后的验证码刷新方法"""
+        max_retry = 3
+        for _ in range(max_retry):
+            try:
+                timestamp = int(time.time() * 1000)
+                url = f"http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue={timestamp}"
+                response = NetworkUtils.safe_request(self.session, url).json()
+                
+                if response.get("code") == 0:
+                    self.current_code = CryptoUtils.aes_decrypt(response["data"])
+                    self.current_ts = str(timestamp)
+                    logger.info(f"验证码刷新成功: {self.current_code[:4]}****")
+                    return
+                else:
+                    logger.warning(f"验证码接口返回异常: {response.get('msg')}")
+            except Exception as e:
+                logger.error(f"验证码刷新失败: {str(e)}")
             
-        self.current_code = CryptoUtils.aes_decrypt(response["data"])
-        self.current_ts = str(int(time.time() * 1000))
-        logger.info(f"验证码刷新成功: {self.current_code[:4]}****")
+            time.sleep(random.uniform(1, 3))  # 增加随机等待时间
+        
+        raise RuntimeError("验证码刷新连续失败，请检查网络连接")
 
     def _get_total_pages(self) -> int:
         """获取总页数"""
