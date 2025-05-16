@@ -15,9 +15,10 @@
 import logging
 import sys
 import requests
-import base64
 import json
 from Crypto.Cipher import AES
+from Crypto.Util.Padding import unpad
+import base64
 import time
 from urllib.parse import quote
 import random
@@ -95,17 +96,15 @@ class CryptoUtils:
         :raises DecryptionError: 解密失败时抛出
         """
         if not encrypted_base64:
-            raise DecryptionError(message="加密数据为空")
-
+            raise ValueError("加密数据为空，无法解密")
+    
         try:
             encrypted_bytes = base64.b64decode(encrypted_base64)
-            if len(encrypted_bytes) % Config.AES_BLOCK_SIZE != 0:
-                raise ValueError("密文长度不符合块大小要求")
-
-            cipher = AES.new(Config.AES_KEY, AES.MODE_CBC, Config.AES_IV)
+            cipher = AES.new(AES_KEY, AES.MODE_CBC, AES_IV)
             decrypted_bytes = cipher.decrypt(encrypted_bytes)
+            unpadded_bytes = unpad(decrypted_bytes, AES.block_size)
+            return unpadded_bytes.decode("utf-8")
 
-            return decrypted_bytes.rstrip(b'\x00').decode("utf-8")
         except (ValueError, TypeError) as e:
             logger.error(f"解密参数错误: {str(e)}")
             raise DecryptionError(encrypted_base64[:50], f"参数错误: {str(e)}")
