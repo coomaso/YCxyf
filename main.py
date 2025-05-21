@@ -61,7 +61,7 @@ class AppConfig:
     EXPORT_DIR: str = "reports"
     LOG_FILE: str = "logs/system.log"
     AES_KEY: bytes = bytes.fromhex(os.getenv("AES_KEY", "6875616E6779696E6875616E6779696E"))
-    AES_IV: bytes = bytes.fromhex(os.getenv("AES_IV", "sskjKingFree5138"))
+    AES_IV: bytes = os.getenv("AES_IV", "sskjKingFree5138").encode()
 
     @classmethod
     def setup(cls):
