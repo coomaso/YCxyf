@@ -251,7 +251,7 @@ class CreditCrawler:
     
     def _check_connectivity(self) -> bool:
         """服务器连通性检查"""
-        test_url = "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/ping"
+        test_url = "http://106.15.60.27:22222"
         try:
             response = self.network.safe_request(test_url)
             return response.status_code == 200
