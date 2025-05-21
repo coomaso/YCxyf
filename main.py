@@ -1,416 +1,334 @@
 """
-宜昌市信用评价信息采集系统
-版本: 3.0
-功能说明:
-1. 自动化采集企业信用评价数据
-2. 支持验证码自动刷新机制
-3. 数据解密采用AES-CBC模式 + PKCS7填充
-4. 智能分页采集与数据校验
-5. 多维度Excel报表生成
-6. 自动生成分类排行榜JSON
-7. 完善的错误处理与重试机制
-8. 结构化日志记录
+宜昌市信用评价信息采集系统 (优化版)
+版本: 3.1
+优化亮点：
+1. 增强型网络请求重试机制
+2. 动态配置管理系统
+3. 结构化异常处理体系
+4. 内存优化的数据导出
+5. 类型安全的代码结构
 """
 
 import logging
 import sys
-import requests
-import json
-from Crypto.Cipher import AES
-import base64
-import time
-from urllib.parse import quote
-import random
 import os
+import json
+import time
+import random
+import base64
+from dataclasses import dataclass
+from typing import Dict, List, Optional, TypedDict, Any
+from urllib.parse import quote
 from datetime import datetime
-from typing import Dict, List, Tuple, Optional, Union
-from openpyxl import Workbook
-from openpyxl.styles import Font, Alignment, Border, Side, PatternFill
-from openpyxl.utils import get_column_letter
 
-# ==================== 日志配置 ====================
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("credit_crawler.log", encoding="utf-8"),
-        logging.StreamHandler()
-    ]
-)
-logger = logging.getLogger(__name__)
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment, PatternFill
+from openpyxl.utils import get_column_letter
+from Crypto.Cipher import AES
+
+# ==================== 配置管理 ====================
+@dataclass
+class AppConfig:
+    RETRY_COUNT: int = 3
+    PAGE_SIZE: int = 10
+    TIMEOUT: int = 15
+    PAGE_RETRY_MAX: int = 2
+    AES_KEY: bytes = os.getenv("AES_KEY", "6875616E6779696E6875616E6779696E").encode()
+    AES_IV: bytes = b"sskjKingFree5138"
+    EXPORT_DIR: str = "reports"
+    LOG_FILE: str = "credit_crawler.log"
+
+    @classmethod
+    def load(cls) -> 'AppConfig':
+        """从环境变量加载配置"""
+        return cls(
+            RETRY_COUNT=int(os.getenv("RETRY_COUNT", "3")),
+            PAGE_SIZE=int(os.getenv("PAGE_SIZE", "10"))
+        )
 
 # ==================== 类型定义 ====================
-class DecryptionError(Exception):
-    """自定义解密异常"""
-    def __init__(self, original_data: str = "", message: str = "AES解密失败"):
-        self.original_data = original_data
-        self.message = f"{message} | 原始数据: {original_data[:50]}"
-        super().__init__(self.message)
+class CompanyData(TypedDict):
+    cioName: str
+    eqtName: str
+    csf: float
+    zzmx: str
+    cxdj: str
+    score: float
+    jcf: float
+    zxjf: float
+    kf: float
+    eqlId: str
+    orgId: str
+    cecId: str
 
-# ==================== 配置常量 ====================
-class Config:
-    RETRY_COUNT = 3
-    PAGE_RETRY_MAX = 2
-    TIMEOUT = 15
-    PAGE_SIZE = 10
-    AES_KEY = b"6875616E6779696E6875616E6779696E"
-    AES_IV = b"sskjKingFree5138"
-    AES_BLOCK_SIZE = 16
+class SheetConfig(TypedDict):
+    name: str
+    filter_key: str
+    filter_value: str
 
-    HEADERS = {
-        "Accept": "application/json",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,vi;q=0.7",
-        "Connection": "keep-alive",
-        "Content-Type": "application/json; charset=utf-8",
-        "Host": "106.15.60.27:22222",
-        "Referer": "http://106.15.60.27:22222/xxgs/",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36"
-    }
+# ==================== 异常体系 ====================
+class CrawlerError(Exception):
+    """爬虫基础异常"""
 
-    COLUMN_SCHEMA = [
-        {'id': 'cioName', 'name': '企业名称', 'width': 35, 'merge': True, 'align': 'left'},
-        {'id': 'eqtName', 'name': '资质类别', 'width': 20, 'merge': True, 'align': 'center'},
-        {'id': 'csf', 'name': '初始分', 'width': 12, 'merge': True, 'align': 'center', 'format': '0'},
-        {'id': 'zzmx', 'name': '资质明细', 'width': 50, 'merge': False, 'align': 'left'},
-        {'id': 'cxdj', 'name': '诚信等级', 'width': 12, 'merge': False, 'align': 'center'},
-        {'id': 'score', 'name': '诚信分值', 'width': 12, 'merge': False, 'align': 'center', 'format': '0.0'},
-        {'id': 'jcf', 'name': '基础分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
-        {'id': 'zxjf', 'name': '专项加分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
-        {'id': 'kf', 'name': '扣分', 'width': 12, 'merge': False, 'align': 'center', 'format': '0'},
-        {'id': 'eqlId', 'name': '资质ID', 'width': 25, 'merge': False, 'align': 'center'},
-        {'id': 'orgId', 'name': '组织ID', 'width': 30, 'merge': True, 'align': 'center'},
-        {'id': 'cecId', 'name': '信用档案ID', 'width': 30, 'merge': True, 'align': 'center'}
-    ]
+class NetworkError(CrawlerError):
+    """网络请求异常"""
 
-# ==================== 核心功能模块 ====================
-class CryptoUtils:
-    @staticmethod
-    def aes_decrypt(encrypted_base64: str) -> str:
-        """
-        AES-CBC解密 
-        
-        :param encrypted_base64: Base64编码的加密字符串
-        :return: 解密后的明文
-        :raises DecryptionError: 解密失败时抛出
-        """
-        if not encrypted_base64:
-            raise ValueError("加密数据为空，无法解密")
+class DecryptionError(CrawlerError):
+    """数据解密异常"""
+
+class ExportError(CrawlerError):
+    """数据导出异常"""
+
+# ==================== 日志配置 ====================
+def setup_logging(config: AppConfig):
+    """结构化日志配置"""
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
     
-        try:
-            encrypted_bytes = base64.b64decode(encrypted_base64)
-            cipher = AES.new(Config.AES_KEY, AES.MODE_CBC, Config.AES_IV)
-            decrypted_bytes = cipher.decrypt(encrypted_bytes)
-            return decrypted_bytes.rstrip(b'\x00').decode("utf-8")
+    handlers = [
+        logging.FileHandler(config.LOG_FILE, encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+    
+    logging.basicConfig(
+        level=logging.INFO,
+        format=formatter._fmt,
+        handlers=handlers
+    )
+    return logging.getLogger(__name__)
 
-        except (ValueError, TypeError) as e:
-            logger.error(f"解密参数错误: {str(e)}")
-            raise DecryptionError(encrypted_base64[:50], f"参数错误: {str(e)}")
-        except UnicodeDecodeError as e:
-            logger.error(f"编码转换失败: {str(e)}")
-            raise DecryptionError(encrypted_base64[:50], f"编码错误: {str(e)}")
-        except Exception as e:
-            logger.error(f"解密过程异常: {str(e)}")
-            raise DecryptionError(encrypted_base64[:50], f"解密失败: {str(e)}")
+logger = setup_logging(AppConfig.load())
 
-class NetworkUtils:
-    @staticmethod
-    def safe_request(session: requests.Session, url: str) -> requests.Response:
-        """
-        安全请求方法，带自动重试机制
-        
-        :param session: requests会话对象
-        :param url: 请求URL
-        :return: 响应对象
-        :raises RuntimeError: 超过最大重试次数时抛出
-        """
-        for attempt in range(Config.RETRY_COUNT):
+# ==================== 核心模块 ====================
+class NetworkManager:
+    """增强型网络请求管理器"""
+    
+    def __init__(self, config: AppConfig):
+        self.config = config
+        self.session = self._create_session()
+    
+    def _create_session(self) -> requests.Session:
+        """创建带重试机制的会话"""
+        session = requests.Session()
+        retry = Retry(
+            total=self.config.RETRY_COUNT,
+            backoff_factor=0.3,
+            status_forcelist=[500, 502, 503, 504]
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+        return session
+    
+    def safe_request(self, url: str) -> requests.Response:
+        """执行安全请求"""
+        for attempt in range(1, self.config.RETRY_COUNT + 1):
             try:
-                if attempt > 0:
-                    delay = random.uniform(0.5, 2.5)
-                    logger.debug(f"请求重试等待: {delay:.2f}s")
-                    time.sleep(delay)
-
-                logger.info(f"请求尝试 {attempt+1}/{Config.RETRY_COUNT} -> {url}")
-                response = session.get(url, headers=Config.HEADERS, timeout=Config.TIMEOUT)
+                response = self.session.get(
+                    url,
+                    headers=self._build_headers(),
+                    timeout=self.config.TIMEOUT
+                )
                 response.raise_for_status()
+                logger.info(f"成功请求: {url}")
                 return response
-
-            except requests.exceptions.Timeout as e:
-                logger.warning(f"请求超时: {str(e)}")
-            except requests.exceptions.HTTPError as e:
-                logger.error(f"HTTP错误: {e.response.status_code} {e.response.reason}")
-            except requests.exceptions.RequestException as e:
-                logger.error(f"请求异常: {str(e)}")
-
-        logger.error(f"超过最大重试次数 {Config.RETRY_COUNT}")
-        raise RuntimeError(f"请求失败，已尝试{Config.RETRY_COUNT}次")
-
-class DataProcessor:
+            except requests.RequestException as e:
+                logger.warning(f"请求失败({attempt}/{self.config.RETRY_COUNT}): {str(e)}")
+                if attempt == self.config.RETRY_COUNT:
+                    raise NetworkError(f"请求失败: {str(e)}") from e
+                time.sleep(random.uniform(1, 3))
+    
     @staticmethod
-    def parse_response(response_data: dict) -> Dict:
-        """
-        响应数据解析方法
-        
-        :param encrypted_data: 加密的响应数据
-        :return: 解析后的数据字典
-        """
-        logger.debug(f"原始响应数据: {json.dumps(response_data, ensure_ascii=False)}")
-        
-        encrypted_data = response_data.get("data")
-        if not encrypted_data:
-            logger.error("服务器返回空数据，可能原因：")
-            logger.error(f"1. 验证码过期 | 2. 请求参数错误 | 3. 服务器限制")
-            logger.error(f"原始响应码: {response_data.get('code')} 信息: {response_data.get('msg')}")
-            return {"error": "empty response data"}
-        try:
-            decrypted_str = CryptoUtils.aes_decrypt(encrypted_data)
-            logger.debug(f"解密数据样本: {decrypted_str[:100]}...")
-            return json.loads(decrypted_str)
-        except json.JSONDecodeError as e:
-            logger.error(f"JSON解析失败: {str(e)}")
-            return {"error": f"无效的JSON格式: {str(e)}"}
-        except DecryptionError as e:
-            logger.error(f"解密失败: {e.message}")
-            return {"error": str(e)}
-
-class ExcelExporter:
-    @staticmethod
-    def generate_report(data: List[Dict], github_mode: bool = False) -> Optional[Dict]:
-        """
-        生成Excel报告
-        
-        :param data: 数据集
-        :param github_mode: GitHub模式标记
-        :return: 生成文件路径信息
-        """
-        wb = Workbook()
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        
-        try:
-            # 数据预处理
-            processed_data = ExcelExporter._process_raw_data(data)
-            
-            # 创建工作表
-            sheets_config = [
-                {"name": "企业信用数据汇总", "filter": lambda x: True},
-                {"name": "建筑工程总承包", "filter": lambda x: "施工总承包_建筑工程_" in x.get("zzmx", "")},
-                {"name": "市政公用工程", "filter": lambda x: "施工总承包_市政公用工程_" in x.get("zzmx", "")},
-                {"name": "装修装饰工程", "filter": lambda x: "专业承包_建筑装修装饰工程_" in x.get("zzmx", "")}
-            ]
-            
-            for config in sheets_config:
-                sheet = wb.create_sheet(title=config["name"])
-                filtered_data = filter(config["filter"], processed_data)
-                ExcelExporter._fill_sheet(sheet, list(filtered_data))
-            
-            # 删除默认sheet
-            if "Sheet" in wb.sheetnames:
-                del wb["Sheet"]
-            
-            # 文件保存
-            filename = ExcelExporter._get_output_filename(github_mode, timestamp)
-            wb.save(filename)
-            
-            logger.info(f"报表生成成功: {filename}")
-            return {"excel": filename, "json": []}
-            
-        except Exception as e:
-            logger.error(f"报表生成失败: {str(e)}")
-            return None
-
-    @staticmethod
-    def _process_raw_data(raw_data: List[Dict]) -> List[Dict]:
-        """数据预处理"""
-        processed = []
-        for item in raw_data:
-            if not isinstance(item, dict):
-                continue
-            processed.extend(ExcelExporter._transform_item(item))
-        return processed
-
-    @staticmethod
-    def _transform_item(item: Dict) -> List[Dict]:
-        """数据项转换"""
-        main_info = {
-            'cioName': item.get('cioName', ''),
-            'eqtName': item.get('eqtName', ''),
-            'csf': float(item.get('csf', 0)),
-            'orgId': item.get('orgId', ''),
-            'cecId': item.get('cecId', ''),
-            'zzmx': ''
+    def _build_headers() -> Dict[str, str]:
+        """构建请求头"""
+        return {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+            "Accept": "application/json",
+            "Referer": "http://106.15.60.27:22222/xxgs/"
         }
-        
-        details = item.get('zzmxcxfArray', [])
-        if not details:
-            return [main_info]
-            
-        return [{
-            **main_info,
-            'zzmx': detail.get('zzmx', ''),
-            'cxdj': detail.get('cxdj', ''),
-            'score': float(detail.get('score', 0)),
-            'jcf': float(detail.get('jcf', 0)),
-            'zxjf': float(detail.get('zxjf', 0)),
-            'kf': float(detail.get('kf', 0)),
-            'eqlId': detail.get('eqlId', '')
-        } for detail in details]
 
-    @staticmethod
-    def _fill_sheet(sheet, data: List[Dict]):
-        """填充工作表数据"""
-        # 表头设置
-        for col_idx, col in enumerate(Config.COLUMN_SCHEMA, 1):
-            cell = sheet.cell(row=1, column=col_idx, value=col['name'])
-            cell.font = Font(bold=True, color="FFFFFF")
-            cell.fill = PatternFill("solid", fgColor="003366")
-            cell.alignment = Alignment(horizontal="center", vertical="center")
-            sheet.column_dimensions[get_column_letter(col_idx)].width = col['width']
-        
-        # 数据行填充
-        for row_idx, row_data in enumerate(data, 2):
-            for col_idx, col in enumerate(Config.COLUMN_SCHEMA, 1):
-                cell = sheet.cell(row=row_idx, column=col_idx, value=row_data.get(col['id'], ''))
-                cell.alignment = Alignment(horizontal=col['align'], vertical="center")
-
-    @staticmethod
-    def _get_output_filename(github_mode: bool, timestamp: str) -> str:
-        """生成输出文件名"""
-        if github_mode:
-            output_dir = os.path.join(os.getcwd(), "excel_output")
-            os.makedirs(output_dir, exist_ok=True)
-            return os.path.join(output_dir, f"宜昌市信用评价信息_{timestamp}.xlsx")
-        return f"宜昌市信用评价信息_{timestamp}.xlsx"
-
-# ==================== 主程序 ====================
-class CreditCrawler:
-    def __init__(self):
-        self.session = requests.Session()
-        self.current_code = ""
-        self.current_ts = ""
-        
-    def _diagnose_connection(self):
-        """连接诊断工具"""
-        test_url = "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue=test"
+class DataExporter:
+    """内存优化的数据导出器"""
+    
+    def __init__(self, config: AppConfig):
+        self.config = config
+        self.sheet_configs: List[SheetConfig] = [
+            {"name": "全部数据", "filter_key": "", "filter_value": ""},
+            {"name": "建筑工程", "filter_key": "zzmx", "filter_value": "施工总承包_建筑工程_"},
+            {"name": "市政工程", "filter_key": "zzmx", "filter_value": "施工总承包_市政公用工程_"}
+        ]
+    
+    def generate_report(self, data: List[CompanyData]) -> str:
+        """生成多维度报告"""
         try:
-            response = self.session.get(test_url, timeout=5)
-            logger.info(f"网络连通性测试: 状态码 {response.status_code}")
-            return True
+            wb = Workbook(write_only=True)
+            self._create_sheets(wb, data)
+            
+            filename = self._generate_filename()
+            wb.save(filename)
+            logger.info(f"报告生成成功: {filename}")
+            return filename
         except Exception as e:
-            logger.error(f"服务器不可达，请检查: {str(e)}")
-            return False
-            
-    def run(self):
-        """主执行流程"""
-        logger.info("=== 启动系统诊断 ===")
-        if not self._diagnose_connection():
-            raise RuntimeError("服务器连接失败")
-            
-        logger.info("=== 爬虫启动 ===")
+            raise ExportError(f"报告生成失败: {str(e)}") from e
+    
+    def _create_sheets(self, wb: Workbook, data: List[CompanyData]):
+        """创建所有工作表"""
+        for config in self.sheet_configs:
+            sheet = wb.create_sheet(title=config["name"])
+            filtered_data = self._filter_data(data, config)
+            self._fill_sheet(sheet, filtered_data)
+    
+    def _filter_data(self, data: List[CompanyData], config: SheetConfig) -> List[CompanyData]:
+        """过滤数据集"""
+        if not config["filter_key"]:
+            return data
+        return [d for d in data if config["filter_value"] in d.get(config["filter_key"], "")]
+    
+    def _fill_sheet(self, sheet, data: List[CompanyData]):
+        """填充工作表数据"""
+        # 列配置
+        columns = [
+            ("企业名称", 35), ("资质类别", 20), ("初始分", 12),
+            ("诚信分值", 12), ("基础分", 12), ("专项加分", 12)
+        ]
+        
+        # 写入标题行
+        header = [col[0] for col in columns]
+        sheet.append(header)
+        
+        # 写入数据行
+        for item in data:
+            row = [
+                item["cioName"], item["eqtName"], item["csf"],
+                item["score"], item["jcf"], item["zxjf"]
+            ]
+            sheet.append(row)
+        
+        # 设置列宽
+        for idx, (_, width) in enumerate(columns, 1):
+            sheet.column_dimensions[get_column_letter(idx)].width = width
+    
+    def _generate_filename(self) -> str:
+        """生成唯一文件名"""
+        os.makedirs(self.config.EXPORT_DIR, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        return os.path.join(self.config.EXPORT_DIR, f"信用评价_{timestamp}.xlsx")
+
+class CreditCrawler:
+    """主爬虫程序"""
+    
+    def __init__(self, config: AppConfig):
+        self.config = config
+        self.network = NetworkManager(config)
+        self.current_code: str = ""
+        self.current_ts: str = ""
+    
+    def run(self) -> str:
+        """执行主流程"""
         try:
+            logger.info("=== 启动爬虫 ===")
+            
+            if not self._check_connectivity():
+                raise NetworkError("服务器连接失败")
+            
             self._refresh_captcha()
-            total = self._get_total_pages()
-            data = self._crawl_all_pages(total)
-            self._export_data(data)
+            total_pages = self._get_total_pages()
+            data = self._crawl_pages(total_pages)
+            
+            return DataExporter(self.config).generate_report(data)
         except KeyboardInterrupt:
             logger.info("用户中断操作")
-        except Exception as e:
-            logger.error(f"爬虫异常终止: {str(e)}")
             raise
-        finally:
-            self.session.close()
-            logger.info("=== 爬虫结束 ===")
-
+        except Exception as e:
+            logger.error(f"爬虫运行失败: {str(e)}")
+            raise
+    
+    def _check_connectivity(self) -> bool:
+        """服务器连通性检查"""
+        test_url = "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/ping"
+        try:
+            response = self.network.safe_request(test_url)
+            return response.status_code == 200
+        except NetworkError:
+            return False
+    
     def _refresh_captcha(self):
-        """优化后的验证码刷新方法"""
-        max_retry = 3
-        for _ in range(max_retry):
+        """刷新验证码"""
+        for _ in range(self.config.RETRY_COUNT):
             try:
-                timestamp = int(time.time() * 1000)
+                timestamp = str(int(time.time() * 1000))
                 url = f"http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue={timestamp}"
-                response = NetworkUtils.safe_request(self.session, url).json()
+                response = self.network.safe_request(url)
                 
-                if response.get("code") == 0:
-                    self.current_code = CryptoUtils.aes_decrypt(response["data"])
-                    self.current_ts = str(timestamp)
-                    logger.info(f"验证码刷新成功: {self.current_code[:4]}****")
-                    return
-                else:
-                    logger.warning(f"验证码接口返回异常: {response.get('msg')}")
+                result = response.json()
+                if result["code"] != 0:
+                    continue
+                
+                self.current_code = self._decrypt_data(result["data"])
+                self.current_ts = timestamp
+                logger.info("验证码刷新成功")
+                return
             except Exception as e:
-                logger.error(f"验证码刷新失败: {str(e)}")
-            
-            time.sleep(random.uniform(1, 3))  # 增加随机等待时间
+                logger.warning(f"验证码刷新失败: {str(e)}")
         
-        raise RuntimeError("验证码刷新连续失败，请检查网络连接")
-
+        raise NetworkError("无法获取有效验证码")
+    
+    def _decrypt_data(self, encrypted: str) -> str:
+        """解密数据"""
+        try:
+            cipher = AES.new(self.config.AES_KEY, AES.MODE_CBC, self.config.AES_IV)
+            decrypted = cipher.decrypt(base64.b64decode(encrypted))
+            return decrypted.rstrip(b"\x00").decode("utf-8")
+        except Exception as e:
+            raise DecryptionError(f"解密失败: {str(e)}") from e
+    
     def _get_total_pages(self) -> int:
         """获取总页数"""
         page_data = self._fetch_page(1)
-        total = page_data.get("total", 0)
-        logger.info(f"总记录数: {total}")
-        return (total + Config.PAGE_SIZE - 1) // Config.PAGE_SIZE
-
-    def _fetch_page(self, page: int) -> Dict:
+        return (page_data["total"] + self.config.PAGE_SIZE - 1) // self.config.PAGE_SIZE
+    
+    def _fetch_page(self, page: int) -> Dict[str, Any]:
         """获取单页数据"""
         url = (
             "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage"
-            f"?pageSize={Config.PAGE_SIZE}&cioName=%E5%85%AC%E5%8F%B8&page={page}"
-            f"&code={quote(self.current_code)}&codeValue={self.current_ts}"
+            f"?pageSize={self.config.PAGE_SIZE}&cioName=%E5%85%AC%E5%8F%B8"
+            f"&page={page}&code={quote(self.current_code)}&codeValue={self.current_ts}"
         )
-        # 新增参数验证
-        logger.debug(f"请求参数验证 -> code: {self.current_code[:4]}... ts: {self.current_ts}")
-        if not all([self.current_code, self.current_ts]):
-            raise ValueError("无效的验证码参数")
         
-        response = NetworkUtils.safe_request(self.session, url)
-        return DataProcessor.parse_response(response.json())
-
-    def _crawl_all_pages(self, total_pages: int) -> List[Dict]:
-        collected_data = []
-        current_page = 1
-        
-        while current_page <= total_pages:
-            retry = 0
-            success = False
-            
-            while retry < Config.PAGE_RETRY_MAX and not success:
+        response = self.network.safe_request(url)
+        decrypted = self._decrypt_data(response.json()["data"])
+        return json.loads(decrypted)
+    
+    def _crawl_pages(self, total_pages: int) -> List[CompanyData]:
+        """采集所有页面数据"""
+        data = []
+        for page in range(1, total_pages + 1):
+            for attempt in range(self.config.PAGE_RETRY_MAX):
                 try:
-                    page_data = self._fetch_page(current_page)
-                    if not page_data.get("data"):
-                        raise ValueError("空数据集")
-                    
-                    collected_data.extend(page_data["data"])
-                    logger.info(f"成功获取第 {current_page}/{total_pages} 页，累计 {len(collected_data)} 条")
-                    success = True
-                    current_page += 1
-                    
+                    page_data = self._fetch_page(page)
+                    data.extend(page_data["data"])
+                    logger.info(f"已采集第 {page}/{total_pages} 页，累计 {len(data)} 条")
+                    break
                 except Exception as e:
-                    retry += 1
-                    logger.warning(f"第 {current_page} 页第 {retry} 次重试，错误: {str(e)}")
-                    self._refresh_captcha()  # 每次重试都刷新验证码
-            
-            if not success:
-                logger.error(f"跳过第 {current_page} 页，连续失败 {Config.PAGE_RETRY_MAX} 次")
-                current_page += 1
-        
-        return collected_data
-
-    def _export_data(self, data: List[Dict]):
-        """导出数据"""
-        if not data:
-            logger.warning("无有效数据，跳过导出")
-            return
-            
-        result = ExcelExporter.generate_report(data, github_mode=True)
-        if result and os.getenv('GITHUB_ACTIONS'):
-            with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-                print(f"file-path={result['excel']}", file=fh)
+                    if attempt == self.config.PAGE_RETRY_MAX - 1:
+                        logger.error(f"跳过第 {page} 页")
+                    else:
+                        self._refresh_captcha()
+        return data
 
 if __name__ == "__main__":
     try:
-        crawler = CreditCrawler()
-        crawler.run()
-    except Exception as e:
+        config = AppConfig.load()
+        crawler = CreditCrawler(config)
+        report_path = crawler.run()
+        print(f"生成报告路径: {report_path}")
+        sys.exit(0)
+    except CrawlerError as e:
         logger.error(f"系统错误: {str(e)}")
         sys.exit(1)
