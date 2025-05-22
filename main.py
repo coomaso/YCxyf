@@ -195,26 +195,43 @@ class DataExporter:
         return [d for d in data if config["filter_value"] in d.get(config["filter_key"], "")]
 
     def _fill_sheet(self, sheet, data: List[CompanyData]):
-        """填充工作表数据（安全字段处理）"""
-        columns = [
-            ("企业名称", 35), ("资质类别", 20), ("初始分", 12),
-            ("诚信分值", 12), ("基础分", 12), ("专项加分", 12)
-        ]
+        """智能字段映射"""
+        # 动态生成字段映射表
+        field_map = {
+            'cioName': ('企业名称', 35),
+            'eqtName': ('资质类别', 20),
+            'csf': ('初始分', 12),
+            'score': ('诚信分值', 12),
+            'jcf': ('基础分', 12),
+            'zxjf': ('专项加分', 12),
+            'zzmx': ('资质明细', 30)
+        }
 
-        # 写入标题行
-        header = [col[0] for col in columns]
+        # 自动检测可用字段
+        available_fields = []
+        if data:
+            sample = data[0]
+            for field in field_map:
+                if field in sample:
+                    available_fields.append(field_map[field])
+
+        # 生成表头
+        header = [col[0] for col in available_fields]
         sheet.append(header)
 
-        # 写入数据行（安全字段访问）
+        # 填充数据
         for item in data:
-            row = [
-                item.get("cioName", "N/A"),
-                item.get("eqtName", "N/A"),
-                item.get("csf", 0.0),
-                item.get("score", 0.0),
-                item.get("jcf", 0.0),
-                item.get("zxjf", 0.0)
-            ]
+            row = []
+            for field in available_fields:
+                raw_value = item.get(field[0], None)
+                # 特殊字段处理
+                if field[0] == 'zzmx':
+                    processed = str(raw_value).replace('_', '/')
+                elif isinstance(raw_value, float):
+                    processed = round(raw_value, 2)
+                else:
+                    processed = raw_value or '--'
+                row.append(processed)
             sheet.append(row)
 
         # 设置列宽
@@ -323,17 +340,29 @@ class CreditCrawler:
                     page_data = self._fetch_page(page)
                     page_items = page_data.get("data", [])
                     
-                    # 数据质量检查
-                    valid_count = 0
-                    for item in page_items:
+                    # 深度数据校验
+                    valid_items = []
+                    for idx, item in enumerate(page_items, 1):
+                        # 生成唯一标识
+                        item_id = item.get('eqlId') or item.get('orgId') or f"page{page}_item{idx}"
+                        
+                        # 关键字段存在性检查
                         missing = required_fields - set(item.keys())
-                        if missing:
-                            logger.warning(f"数据不完整，缺失字段: {missing}，条目ID: {item.get('eqlId', '未知')}")
+                        if len(missing) > 2:  # 允许最多缺失2个非关键字段
+                            logger.warning(f"严重数据缺失 [{item_id}] 缺失字段: {missing}")
                             continue
-                        data.append(item)
-                        valid_count += 1
+                            
+                        # 数值字段有效性检查
+                        numeric_fields = {'csf', 'score', 'jcf', 'zxjf'}
+                        for field in numeric_fields & set(item.keys()):
+                            if not isinstance(item[field], (int, float)):
+                                logger.warning(f"数据类型异常 [{item_id}] {field}={item[field]}")
+                                item[field] = 0.0  # 自动修复为默认值
+                        
+                        valid_items.append(item)
                     
-                    logger.info(f"已采集第 {page}/{total_pages} 页，有效数据 {valid_count}/{len(page_items)} 条")
+                    data.extend(valid_items)
+                    logger.info(f"页码 {page}/{total_pages} | 有效数据: {len(valid_items)}/{len(page_items)}")
                     break
                 except Exception as e:
                     if attempt == self.config.PAGE_RETRY_MAX - 1:
