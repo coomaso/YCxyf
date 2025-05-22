@@ -1,271 +1,354 @@
 """
-宜昌市企业信用数据采集系统 (稳定版)
-版本: 3.3
-核心改进：
-1. 增强型验证码处理机制
-2. 多编码格式支持
-3. 密钥动态验证系统
-4. 智能诊断模式
-5. 网络层深度优化
+宜昌市信用评价信息采集系统 (优化版)
+版本: 3.1.1
+修复内容：
+1. 增加数据字段存在性检查
+2. 完善异常数据处理机制
+3. 增强文件写入稳定性
 """
 
+import logging
 import sys
 import os
 import json
 import time
 import random
 import base64
-import logging
-import traceback
 from dataclasses import dataclass
 from typing import Dict, List, Optional, TypedDict, Any
 from urllib.parse import quote
 from datetime import datetime
-from tqdm import tqdm
 
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from openpyxl import Workbook
+from openpyxl.styles import Font, Alignment, PatternFill
+from openpyxl.utils import get_column_letter
 from Crypto.Cipher import AES
-
-# ==================== 控制台界面 ====================
-class ConsoleUI:
-    """交互式控制台界面"""
-    
-    @staticmethod
-    def show_header():
-        print("\n" + "="*50)
-        print("||  宜昌市企业信用数据采集系统  ||".center(46))
-        print("||    (Version 3.3 稳定版)   ||".center(46))
-        print("="*50)
-        print(f"{'▶ 系统初始化中...':<40}", end='')
-
-    @staticmethod
-    def update_status(message: str, icon="🔄"):
-        print(f"\r{icon} {message.ljust(50)}", end='')
-
-    @staticmethod
-    def show_footer(success: bool):
-        result = "✅ 任务成功完成" if success else "❌ 任务异常终止"
-        print("\n" + "="*50)
-        print(result.center(50))
-        print("="*50)
 
 # ==================== 配置管理 ====================
 @dataclass
 class AppConfig:
     RETRY_COUNT: int = 3
-    PAGE_SIZE: int = 20
-    TIMEOUT: int = 20
-    EXPORT_DIR: str = "reports"
-    LOG_FILE: str = "logs/system.log"
-    AES_KEY: bytes = bytes.fromhex(os.getenv("AES_KEY", "6875616E6779696E6875616E6779696E"))
-    AES_IV: bytes = os.getenv("AES_IV", "sskjKingFree5138").encode()
+    PAGE_SIZE: int = 10
+    TIMEOUT: int = 15
+    PAGE_RETRY_MAX: int = 2
+    AES_KEY: bytes = os.getenv("AES_KEY", "6875616E6779696E6875616E6779696E").encode()
+    AES_IV: bytes = b"sskjKingFree5138"
+    EXPORT_DIR: str = "excel_output"
+    LOG_FILE: str = "credit_crawler.log"
+    REQUIRED_FIELDS: set = frozenset({'cioName', 'eqtName', 'csf', 'score', 'jcf', 'zxjf'})
 
     @classmethod
-    def setup(cls):
-        os.makedirs(cls.EXPORT_DIR, exist_ok=True)
-        os.makedirs(os.path.dirname(cls.LOG_FILE), exist_ok=True)
-        return cls()
+    def load(cls) -> 'AppConfig':
+        """从环境变量加载配置"""
+        return cls(
+            RETRY_COUNT=int(os.getenv("RETRY_COUNT", "3")),
+            PAGE_SIZE=int(os.getenv("PAGE_SIZE", "10"))
+        )
+
+# ==================== 类型定义 ====================
+class CompanyData(TypedDict):
+    cioName: str
+    eqtName: str
+    csf: float
+    zzmx: str
+    cxdj: str
+    score: float
+    jcf: float
+    zxjf: float
+    kf: float
+    eqlId: str
+    orgId: str
+    cecId: str
+
+class SheetConfig(TypedDict):
+    name: str
+    filter_key: str
+    filter_value: str
+
+# ==================== 异常体系 ====================
+class CrawlerError(Exception):
+    """爬虫基础异常"""
+
+class NetworkError(CrawlerError):
+    """网络请求异常"""
+
+class DecryptionError(CrawlerError):
+    """数据解密异常"""
+
+class ExportError(CrawlerError):
+    """数据导出异常"""
+
+# ==================== 日志配置 ====================
+def setup_logging(config: AppConfig):
+    """结构化日志配置"""
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+
+    handlers = [
+        logging.FileHandler(config.LOG_FILE, encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+
+    logging.basicConfig(
+        level=logging.INFO,
+        format=formatter._fmt,
+        handlers=handlers
+    )
+    return logging.getLogger(__name__)
+
+logger = setup_logging(AppConfig.load())
 
 # ==================== 核心模块 ====================
-class NetworkEngine:
-    """智能网络引擎"""
-    
+class NetworkManager:
+    """增强型网络请求管理器"""
+
     def __init__(self, config: AppConfig):
         self.config = config
-        self.session = self._build_session()
-        
-    def _build_session(self) -> requests.Session:
+        self.session = self._create_session()
+
+    def _create_session(self) -> requests.Session:
+        """创建带重试机制的会话"""
         session = requests.Session()
         retry = Retry(
             total=self.config.RETRY_COUNT,
-            backoff_factor=0.5,
+            backoff_factor=0.3,
             status_forcelist=[500, 502, 503, 504]
         )
         adapter = HTTPAdapter(max_retries=retry)
-        session.mount('http://', adapter)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
         return session
-    
-    def safe_fetch(self, url: str) -> requests.Response:
-        for attempt in range(1, self.config.RETRY_COUNT+1):
+
+    def safe_request(self, url: str) -> requests.Response:
+        """执行安全请求"""
+        for attempt in range(1, self.config.RETRY_COUNT + 1):
             try:
-                ConsoleUI.update_status(f"请求 {url[:30]}...")
-                response = self.session.get(url, timeout=self.config.TIMEOUT)
+                response = self.session.get(
+                    url,
+                    headers=self._build_headers(),
+                    timeout=self.config.TIMEOUT
+                )
                 response.raise_for_status()
+                logger.info(f"成功请求: {url}")
                 return response
             except requests.RequestException as e:
+                logger.warning(f"请求失败({attempt}/{self.config.RETRY_COUNT}): {str(e)}")
                 if attempt == self.config.RETRY_COUNT:
                     raise NetworkError(f"请求失败: {str(e)}") from e
-                time.sleep(2 ** attempt)
+                time.sleep(random.uniform(1, 3))
 
-class DataHandler:
-    """数据处理中心"""
-    
+    @staticmethod
+    def _build_headers() -> Dict[str, str]:
+        """构建请求头"""
+        return {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/122.0.6261.95 Safari/537.36",
+            "Accept": "application/json",
+            "Referer": "http://106.15.60.27:22222/xxgs/"
+        }
+
+class DataExporter:
+    """内存优化的数据导出器"""
+
     def __init__(self, config: AppConfig):
         self.config = config
-        self.cipher = AES.new(config.AES_KEY, AES.MODE_CBC, config.AES_IV)
-        self._validate_cipher()
-
-    def _validate_cipher(self):
-        test_data = base64.b64decode("U2FsdGVkX19v4l0q9T/GbAsj6XQx1s2hLm4D7Jk=")
-        decrypted = self.cipher.decrypt(test_data)
-        if b"test" not in decrypted:
-            raise RuntimeError("密钥验证失败")
-
-    def decrypt_response(self, encrypted: str) -> Any:
-        try:
-            raw = base64.b64decode(encrypted)
-            decrypted = self.cipher.decrypt(raw)
-            return self._safe_decode(decrypted)
-        except Exception as e:
-            logging.error(f"解密失败数据: {encrypted[:100]}")
-            raise
-
-    def _safe_decode(self, data: bytes) -> Any:
-        for encoding in ['utf-8', 'gb18030', 'latin-1']:
-            try:
-                return json.loads(data.decode(encoding).rstrip('\x00'))
-            except UnicodeDecodeError:
-                continue
-        raise DecryptionError("无法解码数据")
-
-class ReportBuilder:
-    """报告生成器"""
-    
-    def __init__(self, config: AppConfig):
-        self.config = config
-        self.columns = [
-            ('企业名称', 'cioName', ''),
-            ('资质类别', 'eqtName', ''),
-            ('初始分', 'csf', 0),
-            ('诚信分', 'score', 0)
+        self.sheet_configs: List[SheetConfig] = [
+            {"name": "全部数据", "filter_key": "", "filter_value": ""},
+            {"name": "建筑工程", "filter_key": "zzmx", "filter_value": "施工总承包_建筑工程_"},
+            {"name": "市政工程", "filter_key": "zzmx", "filter_value": "施工总承包_市政公用工程_"},
+            {"name": "装修装饰工程", "filter_key": "zzmx", "filter_value": "专业承包_建筑装修装饰工程_"}
         ]
 
-    def create_report(self, data: List[Dict]) -> str:
-        filename = f"{self.config.EXPORT_DIR}/report_{datetime.now():%Y%m%d%H%M}.xlsx"
+    def generate_report(self, data: List[CompanyData]) -> str:
+        """生成多维度报告"""
         try:
-            with Workbook(write_only=True) as wb:
-                ws = wb.create_sheet("信用数据")
-                ws.append([col[0] for col in self.columns])
-                
-                valid = 0
-                for item in data:
-                    if self._validate_item(item):
-                        ws.append([item.get(col[1], col[2]) for col in self.columns])
-                        valid +=1
-                
-                logging.info(f"有效数据率: {valid}/{len(data)}")
-                wb.save(filename)
-                return filename
+            wb = Workbook(write_only=True)
+            self._create_sheets(wb, data)
+
+            filename = self._generate_filename()
+            wb.save(filename)
+            logger.info(f"报告生成成功: {filename}")
+            return filename
         except Exception as e:
-            if os.path.exists(filename):
-                os.remove(filename)
-            raise
+            raise ExportError(f"报告生成失败: {str(e)}") from e
+        finally:
+            # 确保释放资源
+            if 'wb' in locals():
+                wb.close()
 
-    def _validate_item(self, item: Dict) -> bool:
-        return all(key in item for key in ['cioName', 'score'])
+    def _create_sheets(self, wb: Workbook, data: List[CompanyData]):
+        """创建所有工作表"""
+        for config in self.sheet_configs:
+            sheet = wb.create_sheet(title=config["name"])
+            filtered_data = self._filter_data(data, config)
+            self._fill_sheet(sheet, filtered_data)
 
-# ==================== 主控制器 ====================
-class CreditSystem:
+    def _filter_data(self, data: List[CompanyData], config: SheetConfig) -> List[CompanyData]:
+        """过滤数据集"""
+        if not config["filter_key"]:
+            return data
+        return [d for d in data if config["filter_value"] in d.get(config["filter_key"], "")]
+
+    def _fill_sheet(self, sheet, data: List[CompanyData]):
+        """填充工作表数据（安全字段处理）"""
+        columns = [
+            ("企业名称", 35), ("资质类别", 20), ("初始分", 12),
+            ("诚信分值", 12), ("基础分", 12), ("专项加分", 12)
+        ]
+
+        # 写入标题行
+        header = [col[0] for col in columns]
+        sheet.append(header)
+
+        # 写入数据行（安全字段访问）
+        for item in data:
+            row = [
+                item.get("cioName", "N/A"),
+                item.get("eqtName", "N/A"),
+                item.get("csf", 0.0),
+                item.get("score", 0.0),
+                item.get("jcf", 0.0),
+                item.get("zxjf", 0.0)
+            ]
+            sheet.append(row)
+
+        # 设置列宽
+        for idx, (_, width) in enumerate(columns, 1):
+            sheet.column_dimensions[get_column_letter(idx)].width = width
+
+    def _generate_filename(self) -> str:
+        """生成唯一文件名"""
+        os.makedirs(self.config.EXPORT_DIR, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M")
+        return os.path.join(self.config.EXPORT_DIR, f"宜昌市信用数据_{timestamp}.xlsx")
+
+class CreditCrawler:
+    """主爬虫程序"""
+
     def __init__(self, config: AppConfig):
         self.config = config
-        self.net = NetworkEngine(config)
-        self.data = DataHandler(config)
-        self.report = ReportBuilder(config)
-        self.captcha = {'code': '', 'ts': ''}
+        self.network = NetworkManager(config)
+        self.current_code: str = ""
+        self.current_ts: str = ""
 
-    def execute(self) -> str:
-        ConsoleUI.show_header()
+    def run(self) -> str:
+        """执行主流程"""
         try:
-            self._health_check()
-            total = self._get_total()
-            collected = self._collect_data(total)
-            report_path = self.report.create_report(collected)
-            ConsoleUI.show_footer(True)
-            return report_path
+            logger.info("=== 启动爬虫 ===")
+
+            if not self._check_connectivity():
+                raise NetworkError("服务器连接失败")
+
+            self._refresh_captcha()
+            total_pages = self._get_total_pages()
+            data = self._crawl_pages(total_pages)
+
+            return DataExporter(self.config).generate_report(data)
+        except KeyboardInterrupt:
+            logger.info("用户中断操作")
+            raise
         except Exception as e:
-            ConsoleUI.show_footer(False)
-            logging.error(traceback.format_exc())
+            logger.error(f"爬虫运行失败: {str(e)}")
             raise
 
-    def _health_check(self):
-        checks = [
-            ("检查网络连接", self._check_network),
-            ("获取验证码", self._get_captcha)
-        ]
-        for desc, task in checks:
-            ConsoleUI.update_status(desc)
-            task()
-
-    def _check_network(self):
+    def _check_connectivity(self) -> bool:
+        """服务器连通性检查"""
         test_url = "http://106.15.60.27:22222"
-        if self.net.safe_fetch(test_url).status_code != 200:
-            raise NetworkError("网络不可达")
+        try:
+            response = self.network.safe_request(test_url)
+            return response.status_code == 200
+        except NetworkError:
+            return False
 
-    def _get_captcha(self):
-        for _ in range(3):
+    def _refresh_captcha(self):
+        """刷新验证码"""
+        for _ in range(self.config.RETRY_COUNT):
             try:
-                ts = str(int(time.time()*1000))
-                resp = self.net.safe_fetch(
-                    f"http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue={ts}"
-                ).json()
-                
-                if not resp.get('data'):
+                timestamp = str(int(time.time() * 1000))
+                url = f"http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCreateCode?codeValue={timestamp}"
+                response = self.network.safe_request(url)
+
+                result = response.json()
+                if result["code"] != 0:
                     continue
-                
-                self.captcha = {
-                    'code': self.data.decrypt_response(resp['data']),
-                    'ts': ts
-                }
+
+                self.current_code = self._decrypt_data(result["data"])
+                self.current_ts = timestamp
+                logger.info("验证码刷新成功")
                 return
             except Exception as e:
-                logging.warning(f"验证码获取失败: {str(e)}")
-        raise NetworkError("无法获取验证码")
+                logger.warning(f"验证码刷新失败: {str(e)}")
 
-    def _get_total(self) -> int:
-        data = self._fetch_page(1)
-        return (data['total'] + self.config.PAGE_SIZE - 1) // self.config.PAGE_SIZE
+        raise NetworkError("无法获取有效验证码")
 
-    def _fetch_page(self, page: int) -> Dict:
+    def _decrypt_data(self, encrypted: str) -> str:
+        """解密数据"""
+        try:
+            cipher = AES.new(self.config.AES_KEY, AES.MODE_CBC, self.config.AES_IV)
+            decrypted = cipher.decrypt(base64.b64decode(encrypted))
+            return decrypted.rstrip(b"\x00").decode("utf-8")
+        except Exception as e:
+            raise DecryptionError(f"解密失败: {str(e)}") from e
+
+    def _get_total_pages(self) -> int:
+        """获取总页数"""
+        page_data = self._fetch_page(1)
+        return (page_data.get("total", 0) + self.config.PAGE_SIZE - 1) // self.config.PAGE_SIZE
+
+    def _fetch_page(self, page: int) -> Dict[str, Any]:
+        """获取单页数据"""
         url = (
             "http://106.15.60.27:22222/ycdc/bakCmisYcOrgan/getCurrentIntegrityPage"
-            f"?pageSize={self.config.PAGE_SIZE}&page={page}"
-            f"&code={quote(self.captcha['code'])}&codeValue={self.captcha['ts']}"
+            f"?pageSize={self.config.PAGE_SIZE}&cioName=%E5%85%AC%E5%8F%B8"
+            f"&page={page}&code={quote(self.current_code)}&codeValue={self.current_ts}"
         )
-        return self.data.decrypt_response(self.net.safe_fetch(url).json()['data'])
 
-    def _collect_data(self, total_pages: int) -> List[Dict]:
+        response = self.network.safe_request(url)
+        decrypted = self._decrypt_data(response.json().get("data", ""))
+        return json.loads(decrypted)
+
+    def _crawl_pages(self, total_pages: int) -> List[CompanyData]:
+        """采集所有页面数据（含数据校验）"""
         data = []
-        with tqdm(total=total_pages, desc="采集进度") as bar:
-            for page in range(1, total_pages+1):
+        required_fields = self.config.REQUIRED_FIELDS
+        
+        for page in range(1, total_pages + 1):
+            for attempt in range(self.config.PAGE_RETRY_MAX):
                 try:
                     page_data = self._fetch_page(page)
-                    data.extend(page_data.get('data', []))
-                    bar.update(1)
+                    page_items = page_data.get("data", [])
+                    
+                    # 数据质量检查
+                    valid_count = 0
+                    for item in page_items:
+                        missing = required_fields - set(item.keys())
+                        if missing:
+                            logger.warning(f"数据不完整，缺失字段: {missing}，条目ID: {item.get('eqlId', '未知')}")
+                            continue
+                        data.append(item)
+                        valid_count += 1
+                    
+                    logger.info(f"已采集第 {page}/{total_pages} 页，有效数据 {valid_count}/{len(page_items)} 条")
+                    break
                 except Exception as e:
-                    logging.error(f"第{page}页错误: {str(e)}")
-                    self._get_captcha()
+                    if attempt == self.config.PAGE_RETRY_MAX - 1:
+                        logger.error(f"跳过第 {page} 页")
+                    else:
+                        self._refresh_captcha()
         return data
 
-# ==================== 执行入口 ====================
 if __name__ == "__main__":
     try:
-        config = AppConfig.setup()
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s [%(levelname)s] %(message)s',
-            handlers=[
-                logging.FileHandler(config.LOG_FILE),
-                logging.StreamHandler()
-            ]
-        )
-        
-        system = CreditSystem(config)
-        report = system.execute()
-        print(f"\n生成报告位置: {os.path.abspath(report)}")
+        config = AppConfig.load()
+        crawler = CreditCrawler(config)
+        report_path = crawler.run()
+        print(f"生成报告路径: {report_path}")
         sys.exit(0)
-    except Exception as e:
-        print(f"\n系统错误: {str(e)}")
+    except CrawlerError as e:
+        logger.error(f"系统错误: {str(e)}")
         sys.exit(1)
