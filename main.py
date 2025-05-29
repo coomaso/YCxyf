@@ -328,6 +328,14 @@ class CreditCrawler:
         response = self.network.safe_request(url)
         decrypted = self._decrypt_data(response.json().get("data", ""))
         return json.loads(decrypted)
+        page_data = json.loads(decrypted)
+        # 打印本页全部数据（格式化）
+        print(f"\n--- 第{page}页原始数据 ---")
+        print(json.dumps(page_data, ensure_ascii=False, indent=2))
+        # 或者只打印主要字段
+        print(f"\n--- 第{page}页主要字段 ---")
+        for idx, item in enumerate(page_data.get("data", []), 1):
+            print(f"{idx}. 企业名称: {item.get('cioName', '--')}, 诚信分值: {item.get('score', '--')}")
 
     def _crawl_pages(self, total_pages: int) -> List[CompanyData]:
         """采集所有页面数据（含数据校验）"""
