@@ -1,10 +1,11 @@
 """
-宜昌市信用评价信息采集系统 (优化版)
-版本: 3.1.1
-修复内容：
-1. 增加数据字段存在性检查
-2. 完善异常数据处理机制
-3. 增强文件写入稳定性
+宜昌市信用评价信息采集系统 (增强版)
+版本: 4.0.0
+优化内容：
+1. 重构数据结构，支持资质级信用分展示
+2. 智能补全缺失字段，提高数据完整性
+3. 增强筛选机制，支持按资质类别精确筛选
+4. 优化数据导出格式，提供更详细信用分析
 """
 
 import logging
@@ -38,7 +39,8 @@ class AppConfig:
     AES_IV: bytes = b"sskjKingFree5138"
     EXPORT_DIR: str = "excel_output"
     LOG_FILE: str = "credit_crawler.log"
-    REQUIRED_FIELDS: set = frozenset({'cioName', 'eqtName', 'csf', 'score', 'jcf', 'zxjf'})
+    CORE_FIELDS: set = frozenset({'cioName', 'eqtName'})  # 核心必填字段
+    QUAL_DEFAULT_SCORE: float = 100.0  # 默认信用分值
 
     @classmethod
     def load(cls) -> 'AppConfig':
@@ -49,19 +51,25 @@ class AppConfig:
         )
 
 # ==================== 类型定义 ====================
+class QualificationRecord(TypedDict):
+    """资质信用记录"""
+    zzmx: str          # 资质明细
+    score: float       # 诚信分值
+    zxjf: float        # 专项加分
+    cxdj: str          # 诚信等级
+    csf: float         # 初始分
+    kf: float          # 扣分
+    jcf: float         # 基础分
+    eqlId: str         # 资质ID
+
 class CompanyData(TypedDict):
-    cioName: str
-    eqtName: str
-    csf: float
-    zzmx: str
-    cxdj: str
-    score: float
-    jcf: float
-    zxjf: float
-    kf: float
-    eqlId: str
-    orgId: str
-    cecId: str
+    """企业数据结构"""
+    cioName: str        # 企业名称
+    eqtName: str        # 企业资质大类
+    orgId: str          # 组织ID
+    cecId: str          # 信用ID
+    csf: float          # 企业初始分
+    qualifications: List[QualificationRecord]  # 资质信用记录列表
 
 class SheetConfig(TypedDict):
     name: str
@@ -189,60 +197,74 @@ class DataExporter:
             self._fill_sheet(sheet, filtered_data)
 
     def _filter_data(self, data: List[CompanyData], config: SheetConfig) -> List[CompanyData]:
-        """过滤数据集"""
+        """基于资质的智能筛选"""
         if not config["filter_key"]:
             return data
-        return [d for d in data if config["filter_value"] in d.get(config["filter_key"], "")]
+        
+        filtered = []
+        for company in data:
+            # 检查企业是否符合筛选条件
+            matches = [
+                qual for qual in company['qualifications']
+                if config["filter_value"] in qual.get(config["filter_key"], "")
+            ]
+            
+            if matches:
+                # 创建企业副本并替换资质列表
+                company_copy = dict(company)
+                company_copy['qualifications'] = matches
+                filtered.append(company_copy)
+        
+        return filtered
 
     def _fill_sheet(self, sheet, data: List[CompanyData]):
-        """智能字段映射"""
-        # 动态生成字段映射表
+        """动态生成报表字段"""
+        # 字段映射表（支持资质级和企业级字段）
         field_map = {
-            'cioName': ('企业名称', 35),
-            'eqtName': ('资质类别', 20),
-            'csf': ('初始分', 12),
+            'cioName': ('企业名称', 30),
+            'eqtName': ('企业资质大类', 20),
+            'zzmx': ('资质明细', 40),
             'score': ('诚信分值', 12),
+            'csf': ('初始分', 12),
             'jcf': ('基础分', 12),
             'zxjf': ('专项加分', 12),
-            'zzmx': ('资质明细', 30)
+            'kf': ('扣分', 12),
+            'cxdj': ('诚信等级', 12)
         }
-
-        # 自动检测可用字段
-        available_fields = []
-        if data:
-            sample = data[0]
-            for field in field_map:
-                if field in sample:
-                    available_fields.append(field_map[field])
-
+        
         # 生成表头
-        header = [col[0] for col in available_fields]
+        header = [col[0] for col in field_map.values()]
         sheet.append(header)
-
-        # 填充数据
-        for item in data:
-            row = []
-            for field in available_fields:
-                raw_value = item.get(field[0], None)
-                # 特殊字段处理
-                if field[0] == 'zzmx':
-                    processed = str(raw_value).replace('_', '/')
-                elif isinstance(raw_value, float):
-                    processed = round(raw_value, 2)
-                else:
-                    processed = raw_value or '--'
-                row.append(processed)
-            sheet.append(row)
-
+        
+        # 填充数据（每个资质一条记录）
+        for company in data:
+            for qual in company['qualifications']:
+                row = []
+                for field, (_, _) in field_map.items():
+                    # 智能选择数据源
+                    if field in qual:
+                        value = qual[field]
+                    else:
+                        value = company.get(field, '--')
+                    
+                    # 特殊字段处理
+                    if field == 'zzmx':
+                        value = str(value).replace('_', '/')
+                    elif isinstance(value, float):
+                        value = round(value, 2)
+                    
+                    row.append(value)
+                sheet.append(row)
+        
         # 设置列宽
-        for idx, (_, width) in enumerate(available_fields, 1):
+        for idx, (_, width) in enumerate(field_map.values(), 1):
             sheet.column_dimensions[get_column_letter(idx)].width = width
 
     def _generate_filename(self) -> str:
         """生成唯一文件名"""
         os.makedirs(self.config.EXPORT_DIR, exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M")
-        return os.path.join(self.config.EXPORT_DIR, f"宜昌市信用数据_{timestamp}.xlsx")
+        return os.path.join(self.config.EXPORT_DIR, f"宜昌市企业信用分析报告_{timestamp}.xlsx")
 
 class CreditCrawler:
     """主爬虫程序"""
@@ -329,19 +351,11 @@ class CreditCrawler:
         decrypted = self._decrypt_data(response.json().get("data", ""))
 
         page_data = json.loads(decrypted)
-        # 打印本页全部数据（格式化）
-        print(f"\n--- 第{page}页原始数据 ---")
-        print(json.dumps(page_data, ensure_ascii=False, indent=2))
-        # 或者只打印主要字段
-        print(f"\n--- 第{page}页主要字段 ---")
-        for idx, item in enumerate(page_data.get("data", []), 1):
-            print(f"{idx}. 企业名称: {item.get('cioName', '--')}, 诚信分值: {item.get('score', '--')}")
-        return json.loads(decrypted)
+        return page_data
         
     def _crawl_pages(self, total_pages: int) -> List[CompanyData]:
-        """采集所有页面数据（含数据校验）"""
+        """采集所有页面数据（含智能数据校验）"""
         data = []
-        required_fields = self.config.REQUIRED_FIELDS
         
         for page in range(1, total_pages + 1):
             for attempt in range(self.config.PAGE_RETRY_MAX):
@@ -349,36 +363,78 @@ class CreditCrawler:
                     page_data = self._fetch_page(page)
                     page_items = page_data.get("data", [])
                     
-                    # 深度数据校验
+                    # 智能数据结构转换
                     valid_items = []
-                    for idx, item in enumerate(page_items, 1):
-                        # 生成唯一标识
-                        item_id = item.get('eqlId') or item.get('orgId') or f"page{page}_item{idx}"
-                        
-                        # 关键字段存在性检查
-                        missing = required_fields - set(item.keys())
-                        if len(missing) > 2:  # 允许最多缺失2个非关键字段
-                            logger.warning(f"严重数据缺失 [{item_id}] 缺失字段: {missing}")
+                    for item in page_items:
+                        # 核心字段检查
+                        if not self.config.CORE_FIELDS.issubset(item.keys()):
+                            logger.warning(f"跳过记录：缺失核心字段 {self.config.CORE_FIELDS - set(item.keys())}")
                             continue
-                            
-                        # 数值字段有效性检查
-                        numeric_fields = {'csf', 'score', 'jcf', 'zxjf'}
-                        for field in numeric_fields & set(item.keys()):
-                            if not isinstance(item[field], (int, float)):
-                                logger.warning(f"数据类型异常 [{item_id}] {field}={item[field]}")
-                                item[field] = 0.0  # 自动修复为默认值
                         
-                        valid_items.append(item)
+                        # 标准化数据结构
+                        standardized = self._standardize_data(item)
+                        valid_items.append(standardized)
                     
                     data.extend(valid_items)
-                    logger.info(f"页码 {page}/{total_pages} | 有效数据: {len(valid_items)}/{len(page_items)}")
+                    logger.info(f"页码 {page}/{total_pages} | 有效数据: {len(valid_items)}")
                     break
                 except Exception as e:
                     if attempt == self.config.PAGE_RETRY_MAX - 1:
-                        logger.error(f"跳过第 {page} 页")
+                        logger.error(f"跳过第 {page} 页: {str(e)}")
                     else:
+                        logger.warning(f"重试第 {page} 页: {str(e)}")
                         self._refresh_captcha()
+                        time.sleep(1)
         return data
+
+    def _standardize_data(self, raw_data: Dict) -> CompanyData:
+        """标准化数据结构并补充信用分"""
+        # 基础字段提取
+        company = {
+            'cioName': raw_data['cioName'],
+            'eqtName': raw_data['eqtName'],
+            'orgId': raw_data.get('orgId', ''),
+            'cecId': raw_data.get('cecId', ''),
+            'csf': raw_data.get('csf', self.config.QUAL_DEFAULT_SCORE),
+            'qualifications': []
+        }
+        
+        # 处理资质信用记录
+        for qual in raw_data.get('zzmxcxfArray', []):
+            # 资质字段智能补全
+            self._supply_qual_fields(qual)
+            company['qualifications'].append(qual)
+        
+        # 当没有资质记录时，创建默认记录
+        if not company['qualifications']:
+            company['qualifications'].append({
+                'zzmx': company['eqtName'],
+                'score': company['csf'],
+                'zxjf': 0,
+                'cxdj': '',
+                'csf': company['csf'],
+                'kf': 0,
+                'jcf': 0,
+                'eqlId': company['orgId'] or company['cecId'] or f"default_{time.time()}"
+            })
+        
+        return company
+    
+    def _supply_qual_fields(self, qual: Dict):
+        """资质字段智能补全"""
+        defaults = {
+            'score': qual.get('csf', self.config.QUAL_DEFAULT_SCORE),
+            'zxjf': 0,
+            'cxdj': '',
+            'kf': 0,
+            'jcf': 0
+        }
+        
+        for field, default in defaults.items():
+            if field not in qual:
+                qual[field] = default
+            elif isinstance(default, float) and not isinstance(qual[field], (int, float)):
+                qual[field] = default
 
 if __name__ == "__main__":
     try:
