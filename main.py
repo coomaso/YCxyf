@@ -235,7 +235,7 @@ class DataExporter:
             sheet.append(row)
 
         # 设置列宽
-        for idx, (_, width) in enumerate(columns, 1):
+        for idx, (_, width) in enumerate(available_fields, 1):
             sheet.column_dimensions[get_column_letter(idx)].width = width
 
     def _generate_filename(self) -> str:
